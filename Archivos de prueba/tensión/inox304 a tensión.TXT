@@ -1,13 +1,13 @@
-Symbol	E	Su	Sy 
-Dimension	GPa	MPa	MPa 
-1             	193	580	290 
+Symbol	su	sb	%Elong	Ar 
+Dimension	MPa	MPa	%	% 
+1             	580	480	55	65 
  
 Specimen	 1 
 OriginalGL	 100 	mm	Extenso.GL	 0 mm
-Ex.Diameter	 12.5 mm
-Area	 122,718 	mm2
+Ex.Diameter	 12,5 mm
+Area	 122,7185 	mm2
 Number	Load	Stroke	Elong	Width
-X 200msec	tf	mm	mm	mm
+X 200msectf	mm	mm	mm
  1 	 ,836 	 ,035 	 0 	 0 
  2 	 1,672 	 ,069 	 0 	 0 
  3 	 2,508 	 ,104 	 0 	 0 
