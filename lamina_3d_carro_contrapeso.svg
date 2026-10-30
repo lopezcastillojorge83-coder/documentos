@@ -1,0 +1,367 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1400" viewBox="0 0 1600 1400" role="img" aria-labelledby="title desc">
+  <title id="title">Lámina técnica 3D y 2D del carro impulsado por contrapeso</title>
+  <desc id="desc">Vista isométrica explicativa, vistas lateral y superior, secuencia de funcionamiento, medidas, materiales y ecuaciones físicas del prototipo.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#081426"/><stop offset="1" stop-color="#132a45"/>
+    </linearGradient>
+    <linearGradient id="woodTop" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f2c879"/><stop offset="1" stop-color="#c98e42"/>
+    </linearGradient>
+    <linearGradient id="woodSide" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#a96b2f"/><stop offset="1" stop-color="#70401e"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f4f8fb"/><stop offset="0.38" stop-color="#91a5b7"/><stop offset="0.7" stop-color="#dce7ef"/><stop offset="1" stop-color="#617384"/>
+    </linearGradient>
+    <linearGradient id="redBlock" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff6b62"/><stop offset="1" stop-color="#a82031"/>
+    </linearGradient>
+    <radialGradient id="wheel" cx="35%" cy="30%" r="70%">
+      <stop offset="0" stop-color="#f8fdff" stop-opacity=".98"/><stop offset=".55" stop-color="#b9d7e8" stop-opacity=".8"/><stop offset="1" stop-color="#5b7891" stop-opacity=".92"/>
+    </radialGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000" flood-opacity=".28"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000" flood-opacity=".2"/>
+    </filter>
+    <marker id="arrowCyan" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#27d3f2"/>
+    </marker>
+    <marker id="arrowOrange" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#ffad42"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#ff5b66"/>
+    </marker>
+    <marker id="arrowGray" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#6e8193"/>
+    </marker>
+    <style>
+      .title{font:700 36px 'Segoe UI',Arial,sans-serif;fill:#fff;letter-spacing:.4px}
+      .subtitle{font:400 17px 'Segoe UI',Arial,sans-serif;fill:#afc4d8}
+      .section{font:700 20px 'Segoe UI',Arial,sans-serif;fill:#10243b}
+      .label{font:600 14px 'Segoe UI',Arial,sans-serif;fill:#17314d}
+      .small{font:400 13px 'Segoe UI',Arial,sans-serif;fill:#496176}
+      .tiny{font:400 11.5px 'Segoe UI',Arial,sans-serif;fill:#597083}
+      .white{fill:#fff}.muted{fill:#aec2d5}.cyan{fill:#27d3f2}.orange{fill:#ffad42}.red{fill:#ff5b66}
+      .panel{fill:#fff;stroke:#d9e3ea;stroke-width:1.5}
+      .panelDark{fill:#0d2035;stroke:#29465f;stroke-width:1.5}
+      .call{fill:none;stroke:#648096;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+      .dim{fill:none;stroke:#6e8193;stroke-width:1.3;marker-start:url(#arrowGray);marker-end:url(#arrowGray)}
+      .dash{stroke-dasharray:7 6}
+    </style>
+  </defs>
+
+  <!-- Background and header -->
+  <rect width="1600" height="1400" fill="#eef3f7"/>
+  <rect width="1600" height="105" fill="url(#bg)"/>
+  <circle cx="72" cy="53" r="27" fill="#27d3f2" opacity=".14"/>
+  <path d="M52 58h40M58 47h28" stroke="#27d3f2" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="61" cy="65" r="8" fill="none" stroke="#27d3f2" stroke-width="3"/>
+  <circle cx="84" cy="65" r="8" fill="none" stroke="#27d3f2" stroke-width="3"/>
+  <text x="115" y="49" class="title">CARRO IMPULSADO POR CONTRAPESO</text>
+  <text x="116" y="78" class="subtitle">Lámina de diseño · modelo isométrico 3D + explicación técnica 2D · Física I</text>
+  <rect x="1350" y="28" width="200" height="48" rx="24" fill="#17334e" stroke="#2f5875"/>
+  <text x="1450" y="49" text-anchor="middle" class="muted" style="font:600 12px 'Segoe UI',Arial">ENERGÍA PERMITIDA</text>
+  <text x="1450" y="67" text-anchor="middle" class="white" style="font:700 14px 'Segoe UI',Arial">solo caída gravitatoria</text>
+
+  <!-- Main panel -->
+  <rect x="28" y="128" width="1028" height="650" rx="20" class="panel" filter="url(#softShadow)"/>
+  <text x="58" y="165" class="section">A. MODELO ISOMÉTRICO 3D</text>
+  <text x="58" y="188" class="small">El contrapeso, la polea y el soporte viajan con el carro: el sistema no queda atado a la mesa.</text>
+
+  <!-- Ground plane -->
+  <path d="M86 661 L526 773 L1003 618 L568 510 Z" fill="#dce8ed" opacity=".75"/>
+  <g stroke="#c5d6de" stroke-width="1" opacity=".75">
+    <path d="M131 673L609 522M188 688L664 536M245 702L720 550M302 717L775 564M359 731L831 578M416 746L887 592M473 760L943 607"/>
+    <path d="M137 645L575 754M198 626L636 734M259 606L697 714M320 586L758 694M381 566L819 674M442 546L880 654M503 526L941 634"/>
+  </g>
+  <ellipse cx="540" cy="652" rx="397" ry="92" fill="#526879" opacity=".18"/>
+
+  <!-- Far wheels (behind chassis) -->
+  <g opacity=".88">
+    <g transform="translate(317 443) rotate(16)">
+      <ellipse rx="69" ry="91" fill="url(#wheel)" stroke="#355167" stroke-width="8"/>
+      <ellipse rx="47" ry="65" fill="none" stroke="#f6fbff" stroke-width="5" opacity=".8"/>
+      <ellipse rx="12" ry="16" fill="#506a7f"/><ellipse rx="4" ry="5" fill="#dfeaf1"/>
+    </g>
+    <g transform="translate(763 323) rotate(16)">
+      <ellipse rx="69" ry="91" fill="url(#wheel)" stroke="#355167" stroke-width="8"/>
+      <ellipse rx="47" ry="65" fill="none" stroke="#f6fbff" stroke-width="5" opacity=".8"/>
+      <ellipse rx="12" ry="16" fill="#506a7f"/><ellipse rx="4" ry="5" fill="#dfeaf1"/>
+    </g>
+  </g>
+
+  <!-- Chassis prism -->
+  <g filter="url(#shadow)">
+    <path d="M205 443 L715 305 L948 405 L432 553 Z" fill="url(#woodTop)" stroke="#7b4a21" stroke-width="2"/>
+    <path d="M432 553 L948 405 L948 446 L432 597 Z" fill="url(#woodSide)" stroke="#653917" stroke-width="2"/>
+    <path d="M205 443 L432 553 L432 597 L205 482 Z" fill="#8e5426" stroke="#653917" stroke-width="2"/>
+    <path d="M271 441L740 316M352 480L820 352M435 520L895 389" stroke="#fff1c8" stroke-width="2" opacity=".25"/>
+  </g>
+
+  <!-- Axles -->
+  <path d="M266 478 L768 340" stroke="#566b7c" stroke-width="15" stroke-linecap="round"/>
+  <path d="M395 557 L891 421" stroke="#8397a7" stroke-width="12" stroke-linecap="round"/>
+
+  <!-- Near wheels -->
+  <g filter="url(#softShadow)">
+    <g transform="translate(260 520) rotate(16)">
+      <ellipse rx="73" ry="96" fill="url(#wheel)" stroke="#263f54" stroke-width="9"/>
+      <ellipse rx="51" ry="69" fill="none" stroke="#f5fbff" stroke-width="6" opacity=".9"/>
+      <path d="M0-65L0 65M-49 0L49 0M-35-46L35 46M35-46L-35 46" stroke="#7e9bb0" stroke-width="2.5" opacity=".8"/>
+      <ellipse rx="14" ry="18" fill="#3a566d"/><ellipse rx="5" ry="7" fill="#eaf3f8"/>
+    </g>
+    <g transform="translate(718 393) rotate(16)">
+      <ellipse rx="73" ry="96" fill="url(#wheel)" stroke="#263f54" stroke-width="9"/>
+      <ellipse rx="51" ry="69" fill="none" stroke="#f5fbff" stroke-width="6" opacity=".9"/>
+      <path d="M0-65L0 65M-49 0L49 0M-35-46L35 46M35-46L-35 46" stroke="#7e9bb0" stroke-width="2.5" opacity=".8"/>
+      <ellipse rx="14" ry="18" fill="#3a566d"/><ellipse rx="5" ry="7" fill="#eaf3f8"/>
+    </g>
+  </g>
+
+  <!-- Rear axle spool highlighted -->
+  <g transform="translate(495 416) rotate(-15)">
+    <ellipse cx="-20" cy="0" rx="13" ry="24" fill="#117a93"/>
+    <rect x="-20" y="-24" width="40" height="48" fill="#1ab6d4"/>
+    <ellipse cx="20" cy="0" rx="13" ry="24" fill="#6ee5f5" stroke="#0d7187" stroke-width="3"/>
+    <path d="M-13-16 C-3-7,3 7,14 17M-13-5 C-3 4,3 13,14 20M-13-22 C-3-14,4-2,14 8" fill="none" stroke="#ffad42" stroke-width="3"/>
+  </g>
+
+  <!-- Mast bases -->
+  <path d="M471 427L585 460L585 477L468 443Z" fill="#7f522b"/>
+  <path d="M642 381L753 412L753 428L640 398Z" fill="#7f522b"/>
+
+  <!-- Mast / frame -->
+  <g filter="url(#softShadow)">
+    <path d="M488 432 L515 225" stroke="#394e60" stroke-width="18" stroke-linecap="round"/>
+    <path d="M659 385 L685 179" stroke="#394e60" stroke-width="18" stroke-linecap="round"/>
+    <path d="M515 225 L685 179" stroke="#394e60" stroke-width="17" stroke-linecap="round"/>
+    <path d="M496 431 L522 228M667 383L692 181M522 228L692 181" stroke="#b9cad6" stroke-width="5" stroke-linecap="round" opacity=".8"/>
+    <!-- braces -->
+    <path d="M493 420L612 257M663 374L552 217" stroke="#557083" stroke-width="8" opacity=".75"/>
+  </g>
+
+  <!-- Pulley -->
+  <g transform="translate(612 206) rotate(-15)" filter="url(#softShadow)">
+    <ellipse rx="31" ry="38" fill="url(#metal)" stroke="#314b60" stroke-width="6"/>
+    <ellipse rx="18" ry="23" fill="#233c51"/>
+    <ellipse rx="7" ry="9" fill="#dbe8ef"/>
+    <path d="M-27-18C-7-5 8 9 27 19" fill="none" stroke="#ffad42" stroke-width="5"/>
+  </g>
+
+  <!-- String: spool to pulley, then vertical drop -->
+  <path d="M505 400 Q546 309 594 224" fill="none" stroke="#ffad42" stroke-width="6" stroke-linecap="round"/>
+  <path d="M635 213 L665 397" fill="none" stroke="#ffad42" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Weight guide rails, translucent -->
+  <path d="M630 241L652 414M687 226L712 402" stroke="#9cb2c1" stroke-width="5" opacity=".42" stroke-dasharray="9 8"/>
+
+  <!-- Counterweight 3D -->
+  <g filter="url(#softShadow)">
+    <path d="M626 337 L675 324 L704 338 L655 352 Z" fill="#ff847c" stroke="#8d2533" stroke-width="2"/>
+    <path d="M626 337 L655 352 L665 421 L635 406 Z" fill="url(#redBlock)" stroke="#8d2533" stroke-width="2"/>
+    <path d="M655 352 L704 338 L714 406 L665 421 Z" fill="#b92d3c" stroke="#8d2533" stroke-width="2"/>
+    <path d="M659 331L658 304" stroke="#ffad42" stroke-width="5"/>
+    <circle cx="658" cy="329" r="8" fill="none" stroke="#ffe5b7" stroke-width="3"/>
+    <text x="670" y="386" text-anchor="middle" class="white" style="font:700 23px 'Segoe UI',Arial">m</text>
+  </g>
+
+  <!-- Ballast on drive axle -->
+  <g filter="url(#softShadow)">
+    <path d="M329 409L412 386L459 407L375 431Z" fill="#b5c2cb" stroke="#506576" stroke-width="2"/>
+    <path d="M375 431L459 407L459 432L375 456Z" fill="#6d8292" stroke="#506576" stroke-width="2"/>
+    <path d="M329 409L375 431L375 456L329 434Z" fill="#879baa" stroke="#506576" stroke-width="2"/>
+    <text x="395" y="422" text-anchor="middle" class="label" style="font-size:11px">LASTRE</text>
+  </g>
+
+  <!-- Motion arrows -->
+  <path d="M762 600 Q874 570 966 509" fill="none" stroke="#27d3f2" stroke-width="7" marker-end="url(#arrowCyan)"/>
+  <text x="861" y="590" class="label cyan" style="font-size:16px">AVANCE</text>
+  <path d="M746 329Q781 357 752 391" fill="none" stroke="#27d3f2" stroke-width="5" marker-end="url(#arrowCyan)"/>
+  <path d="M737 261L747 322" fill="none" stroke="#ff5b66" stroke-width="5" marker-end="url(#arrowRed)"/>
+  <text x="755" y="288" class="label red">caída</text>
+
+  <!-- Main callout badges -->
+  <g>
+    <path d="M203 348L309 390L352 420" class="call"/><circle cx="191" cy="343" r="15" fill="#27d3f2"/><text x="191" y="348" text-anchor="middle" class="label">1</text>
+    <path d="M115 544L177 535" class="call"/><circle cx="101" cy="546" r="15" fill="#27d3f2"/><text x="101" y="551" text-anchor="middle" class="label">2</text>
+    <path d="M424 319L472 391" class="call"/><circle cx="417" cy="307" r="15" fill="#27d3f2"/><text x="417" y="312" text-anchor="middle" class="label">3</text>
+    <path d="M535 138L593 190" class="call"/><circle cx="527" cy="131" r="15" fill="#ffad42"/><text x="527" y="136" text-anchor="middle" class="label">4</text>
+    <path d="M723 143L631 192" class="call"/><circle cx="736" cy="137" r="15" fill="#ffad42"/><text x="736" y="142" text-anchor="middle" class="label">5</text>
+    <path d="M833 295L705 353" class="call"/><circle cx="846" cy="289" r="15" fill="#ff5b66"/><text x="846" y="294" text-anchor="middle" class="white" style="font:700 14px Arial">6</text>
+    <path d="M548 511L521 444" class="call"/><circle cx="554" cy="525" r="15" fill="#27d3f2"/><text x="554" y="530" text-anchor="middle" class="label">7</text>
+    <path d="M301 331L355 393" class="call"/><circle cx="293" cy="320" r="15" fill="#8da2b1"/><text x="293" y="325" text-anchor="middle" class="white" style="font:700 14px Arial">8</text>
+  </g>
+
+  <!-- Right explanation panel -->
+  <rect x="1080" y="128" width="492" height="650" rx="20" class="panelDark" filter="url(#softShadow)"/>
+  <text x="1110" y="166" class="white" style="font:700 20px 'Segoe UI',Arial">PIEZAS Y FUNCIÓN</text>
+  <text x="1110" y="190" class="muted" style="font:400 13px 'Segoe UI',Arial">Los números corresponden al modelo 3D.</text>
+
+  <g>
+    <circle cx="1119" cy="229" r="15" fill="#27d3f2"/><text x="1119" y="234" text-anchor="middle" class="label">1</text>
+    <text x="1147" y="226" class="white" style="font:700 14px 'Segoe UI',Arial">Chasis ligero y rígido</text>
+    <text x="1147" y="247" class="muted" style="font:400 12.5px 'Segoe UI',Arial">Madera de 5 mm o cartón prensado. Base sugerida: 32 × 18 cm.</text>
+
+    <circle cx="1119" cy="285" r="15" fill="#27d3f2"/><text x="1119" y="290" text-anchor="middle" class="label">2</text>
+    <text x="1147" y="282" class="white" style="font:700 14px 'Segoe UI',Arial">Cuatro ruedas de CD</text>
+    <text x="1147" y="303" class="muted" style="font:400 12.5px 'Segoe UI',Arial">Ø 12 cm. Las traseras quedan fijas al eje; las delanteras giran libres.</text>
+
+    <circle cx="1119" cy="341" r="15" fill="#27d3f2"/><text x="1119" y="346" text-anchor="middle" class="label">3</text>
+    <text x="1147" y="338" class="white" style="font:700 14px 'Segoe UI',Arial">Eje tractor + carrete</text>
+    <text x="1147" y="359" class="muted" style="font:400 12.5px 'Segoe UI',Arial">Varilla recta y carrete intercambiable de radio r = 3–5 mm.</text>
+
+    <circle cx="1119" cy="397" r="15" fill="#ffad42"/><text x="1119" y="402" text-anchor="middle" class="label">4</text>
+    <text x="1147" y="394" class="white" style="font:700 14px 'Segoe UI',Arial">Bastidor vertical</text>
+    <text x="1147" y="415" class="muted" style="font:400 12.5px 'Segoe UI',Arial">Dos postes con crucetas. Altura total del prototipo: máximo 40 cm.</text>
+
+    <circle cx="1119" cy="453" r="15" fill="#ffad42"/><text x="1119" y="458" text-anchor="middle" class="label">5</text>
+    <text x="1147" y="450" class="white" style="font:700 14px 'Segoe UI',Arial">Polea de reenvío</text>
+    <text x="1147" y="471" class="muted" style="font:400 12.5px 'Segoe UI',Arial">Cambia la dirección del hilo con el menor rozamiento posible.</text>
+
+    <circle cx="1119" cy="509" r="15" fill="#ff5b66"/><text x="1119" y="514" text-anchor="middle" class="white" style="font:700 14px Arial">6</text>
+    <text x="1147" y="506" class="white" style="font:700 14px 'Segoe UI',Arial">Contrapeso ajustable</text>
+    <text x="1147" y="527" class="muted" style="font:400 12.5px 'Segoe UI',Arial">Arandelas en una bolsa o botella. Probar 0,2–0,8 kg; nunca superar 1 kg.</text>
+
+    <circle cx="1119" cy="565" r="15" fill="#27d3f2"/><text x="1119" y="570" text-anchor="middle" class="label">7</text>
+    <text x="1147" y="562" class="white" style="font:700 14px 'Segoe UI',Arial">Hilo inextensible</text>
+    <text x="1147" y="583" class="muted" style="font:400 12.5px 'Segoe UI',Arial">Nylon o cordel fino. Debe enrollarse en una sola capa, sin cruces.</text>
+
+    <circle cx="1119" cy="621" r="15" fill="#8da2b1"/><text x="1119" y="626" text-anchor="middle" class="white" style="font:700 14px Arial">8</text>
+    <text x="1147" y="618" class="white" style="font:700 14px 'Segoe UI',Arial">Lastre opcional sobre el eje tractor</text>
+    <text x="1147" y="639" class="muted" style="font:400 12.5px 'Segoe UI',Arial">Aumenta la fuerza normal y reduce el patinaje de las ruedas motrices.</text>
+  </g>
+
+  <rect x="1108" y="670" width="436" height="82" rx="12" fill="#162f49" stroke="#2c5873"/>
+  <text x="1129" y="696" class="orange" style="font:700 13px 'Segoe UI',Arial">DETALLE RECOMENDADO: liberación del hilo</text>
+  <text x="1129" y="718" class="muted" style="font:400 12.2px 'Segoe UI',Arial">Usar un lazo abierto en un pequeño pasador del carrete. Al terminar la última</text>
+  <text x="1129" y="737" class="muted" style="font:400 12.2px 'Segoe UI',Arial">vuelta, el lazo sale y permite que el carro continúe por inercia. Debe probarse.</text>
+
+  <!-- Lower left: side view -->
+  <rect x="28" y="805" width="505" height="360" rx="18" class="panel"/>
+  <text x="54" y="840" class="section">B. VISTA LATERAL · MEDIDAS</text>
+  <text x="54" y="862" class="small">Dimensiones sugeridas, ajustables dentro del límite oficial.</text>
+  <!-- side chassis -->
+  <rect x="100" y="1014" width="350" height="30" rx="4" fill="url(#woodTop)" stroke="#70401e" stroke-width="2"/>
+  <circle cx="164" cy="1057" r="48" fill="url(#wheel)" stroke="#355167" stroke-width="6"/>
+  <circle cx="386" cy="1057" r="48" fill="url(#wheel)" stroke="#355167" stroke-width="6"/>
+  <circle cx="164" cy="1057" r="9" fill="#36556b"/><circle cx="386" cy="1057" r="9" fill="#36556b"/>
+  <!-- spool -->
+  <circle cx="164" cy="1057" r="15" fill="#20bfd8" stroke="#0b7186" stroke-width="3"/>
+  <text x="142" y="995" class="tiny">carrete r</text>
+  <path d="M165 1041L274 901" stroke="#ffad42" stroke-width="4"/>
+  <!-- mast -->
+  <path d="M236 1013L263 891M335 1013L308 891M263 891L308 891" fill="none" stroke="#425d70" stroke-width="10" stroke-linejoin="round"/>
+  <circle cx="286" cy="893" r="18" fill="url(#metal)" stroke="#425d70" stroke-width="4"/>
+  <path d="M304 893L304 974" stroke="#ffad42" stroke-width="4"/>
+  <rect x="287" y="951" width="35" height="48" rx="4" fill="url(#redBlock)"/>
+  <text x="304" y="980" text-anchor="middle" class="white" style="font:700 16px Arial">m</text>
+  <!-- h arrow -->
+  <path d="M347 904L347 974" class="dim"/>
+  <text x="358" y="944" class="label">h</text>
+  <!-- dimensions -->
+  <path d="M99 1128L450 1128" class="dim"/>
+  <text x="274" y="1152" text-anchor="middle" class="label">largo sugerido: 32 cm (máx. 40 cm)</text>
+  <path d="M475 893L475 1105" class="dim"/>
+  <text x="487" y="1000" transform="rotate(90 487 1000)" text-anchor="middle" class="label">altura máx. 40 cm</text>
+  <path d="M93 1057A71 71 0 0 1 235 1057" fill="none" stroke="#27d3f2" stroke-width="3" marker-end="url(#arrowCyan)"/>
+  <text x="164" y="1109" text-anchor="middle" class="tiny">R ≈ 6 cm</text>
+  <path d="M326 926L326 970" stroke="#ff5b66" stroke-width="3" marker-end="url(#arrowRed)"/>
+  <text x="335" y="921" class="tiny red">m·g</text>
+
+  <!-- Lower center: top view -->
+  <rect x="552" y="805" width="468" height="360" rx="18" class="panel"/>
+  <text x="578" y="840" class="section">C. VISTA SUPERIOR · ALINEACIÓN</text>
+  <text x="578" y="862" class="small">La simetría evita que el carro gire y pierda distancia.</text>
+  <rect x="659" y="904" width="260" height="190" rx="5" fill="#e8bd73" stroke="#70401e" stroke-width="3"/>
+  <rect x="635" y="918" width="308" height="12" rx="6" fill="#596f80"/>
+  <rect x="635" y="1065" width="308" height="10" rx="5" fill="#8093a2"/>
+  <rect x="619" y="890" width="29" height="70" rx="12" fill="url(#wheel)" stroke="#355167" stroke-width="4"/>
+  <rect x="930" y="890" width="29" height="70" rx="12" fill="url(#wheel)" stroke="#355167" stroke-width="4"/>
+  <rect x="621" y="1038" width="27" height="65" rx="12" fill="url(#wheel)" stroke="#597286" stroke-width="4"/>
+  <rect x="931" y="1038" width="27" height="65" rx="12" fill="url(#wheel)" stroke="#597286" stroke-width="4"/>
+  <rect x="777" y="912" width="20" height="24" rx="3" fill="#20bfd8"/>
+  <path d="M787 884L787 1110" stroke="#27d3f2" stroke-width="2" stroke-dasharray="7 6"/>
+  <text x="798" y="1119" class="tiny cyan">eje central del carro</text>
+  <rect x="705" y="947" width="74" height="35" rx="4" fill="#8fa1ae"/>
+  <text x="742" y="969" text-anchor="middle" class="tiny">lastre</text>
+  <path d="M619 1132L959 1132" class="dim"/>
+  <text x="789" y="1153" text-anchor="middle" class="label">ancho sugerido: 18 cm (máx. 25 cm)</text>
+  <path d="M972 923L972 1069" stroke="#27d3f2" stroke-width="3" marker-end="url(#arrowCyan)"/>
+  <text x="981" y="1001" class="tiny cyan" transform="rotate(90 981 1001)">ambos ejes paralelos</text>
+
+  <!-- Lower right: sequence -->
+  <rect x="1039" y="805" width="533" height="360" rx="18" class="panel"/>
+  <text x="1065" y="840" class="section">D. SECUENCIA DE FUNCIONAMIENTO</text>
+  <text x="1065" y="862" class="small">Preparación y movimiento en cuatro momentos.</text>
+
+  <!-- step 1 -->
+  <g transform="translate(1064 888)">
+    <rect width="227" height="106" rx="10" fill="#f3f7fa" stroke="#d9e3ea"/>
+    <circle cx="22" cy="22" r="14" fill="#17314d"/><text x="22" y="27" text-anchor="middle" class="white" style="font:700 13px Arial">1</text>
+    <path d="M44 78h151" stroke="#a96b2f" stroke-width="10"/><circle cx="72" cy="84" r="17" fill="#b9d7e8" stroke="#355167" stroke-width="3"/><circle cx="171" cy="84" r="17" fill="#b9d7e8" stroke="#355167" stroke-width="3"/>
+    <path d="M109 74L119 23H156L164 74" fill="none" stroke="#4d677a" stroke-width="5"/><circle cx="138" cy="24" r="8" fill="#96a9b6"/><path d="M138 31V47" stroke="#ffad42" stroke-width="3"/><rect x="130" y="43" width="17" height="23" fill="#d13b47"/>
+    <path d="M88 70Q98 41 132 26" fill="none" stroke="#ffad42" stroke-width="3"/>
+    <text x="111" y="101" text-anchor="middle" class="tiny">Enrollar y elevar m</text>
+  </g>
+  <!-- step 2 -->
+  <g transform="translate(1313 888)">
+    <rect width="231" height="106" rx="10" fill="#fff8ec" stroke="#f0d49f"/>
+    <circle cx="22" cy="22" r="14" fill="#ffad42"/><text x="22" y="27" text-anchor="middle" class="label">2</text>
+    <path d="M44 78h151" stroke="#a96b2f" stroke-width="10"/><circle cx="72" cy="84" r="17" fill="#b9d7e8" stroke="#355167" stroke-width="3"/><circle cx="171" cy="84" r="17" fill="#b9d7e8" stroke="#355167" stroke-width="3"/>
+    <path d="M109 74L119 23H156L164 74" fill="none" stroke="#4d677a" stroke-width="5"/><circle cx="138" cy="24" r="8" fill="#96a9b6"/><path d="M138 31V69" stroke="#ffad42" stroke-width="3"/><rect x="130" y="59" width="17" height="23" fill="#d13b47"/>
+    <path d="M208 61H181" stroke="#27d3f2" stroke-width="3" marker-end="url(#arrowCyan)"/><path d="M153 42V56" stroke="#ff5b66" stroke-width="3" marker-end="url(#arrowRed)"/>
+    <text x="115" y="101" text-anchor="middle" class="tiny">Soltar: m cae y el eje gira</text>
+  </g>
+  <!-- step 3 -->
+  <g transform="translate(1064 1010)">
+    <rect width="227" height="126" rx="10" fill="#edfafd" stroke="#b7e7ef"/>
+    <circle cx="22" cy="22" r="14" fill="#27d3f2"/><text x="22" y="27" text-anchor="middle" class="label">3</text>
+    <circle cx="96" cy="60" r="27" fill="#20bfd8" stroke="#0b7186" stroke-width="4"/><circle cx="96" cy="60" r="6" fill="#fff"/>
+    <line x1="120" y1="47" x2="173" y2="31" stroke="#ffad42" stroke-width="4"/>
+    <path d="M167 27q18 7 5 20" fill="none" stroke="#ffad42" stroke-width="4" marker-end="url(#arrowOrange)"/>
+    <text x="113" y="103" text-anchor="middle" class="tiny">La última vuelta libera</text>
+    <text x="113" y="118" text-anchor="middle" class="tiny">el lazo del pasador</text>
+  </g>
+  <!-- step 4 -->
+  <g transform="translate(1313 1010)">
+    <rect width="231" height="126" rx="10" fill="#eef8f3" stroke="#bde1cd"/>
+    <circle cx="22" cy="22" r="14" fill="#31b873"/><text x="22" y="27" text-anchor="middle" class="white" style="font:700 13px Arial">4</text>
+    <path d="M41 78h151" stroke="#a96b2f" stroke-width="10"/><circle cx="69" cy="84" r="17" fill="#b9d7e8" stroke="#355167" stroke-width="3"/><circle cx="168" cy="84" r="17" fill="#b9d7e8" stroke="#355167" stroke-width="3"/>
+    <path d="M109 74L119 23H156L164 74" fill="none" stroke="#4d677a" stroke-width="5"/>
+    <path d="M215 58H183" stroke="#27d3f2" stroke-width="4" marker-end="url(#arrowCyan)"/>
+    <text x="115" y="105" text-anchor="middle" class="tiny">El carro continúa por inercia</text>
+  </g>
+
+  <!-- Bottom physics strip -->
+  <rect x="28" y="1188" width="1544" height="183" rx="18" fill="url(#bg)"/>
+  <text x="55" y="1223" class="white" style="font:700 18px 'Segoe UI',Arial">E. LECTURA FÍSICA DEL DISEÑO</text>
+  <line x1="55" y1="1238" x2="1545" y2="1238" stroke="#2b4c66"/>
+
+  <g>
+    <rect x="55" y="1255" width="326" height="88" rx="12" fill="#132d47" stroke="#2c5873"/>
+    <text x="75" y="1280" class="orange" style="font:700 13px 'Segoe UI',Arial">1 · ENERGÍA DE ENTRADA</text>
+    <text x="75" y="1308" class="white" style="font:700 20px Georgia,serif">E<tspan dy="5" font-size="13">p</tspan><tspan dy="-5"> = mgh</tspan></text>
+    <text x="75" y="1332" class="muted" style="font:400 12px 'Segoe UI',Arial">Más masa o altura aporta más energía, pero puede causar patinaje.</text>
+
+    <rect x="397" y="1255" width="358" height="88" rx="12" fill="#132d47" stroke="#2c5873"/>
+    <text x="417" y="1280" class="cyan" style="font:700 13px 'Segoe UI',Arial">2 · TRANSMISIÓN IDEAL</text>
+    <text x="417" y="1308" class="white" style="font:700 20px Georgia,serif">x<tspan dy="5" font-size="13">impulso</tspan><tspan dy="-5"> ≈ h · R/r</tspan></text>
+    <text x="417" y="1332" class="muted" style="font:400 12px 'Segoe UI',Arial">Rueda grande y carrete fino aumentan distancia, pero reducen fuerza.</text>
+
+    <rect x="771" y="1255" width="420" height="88" rx="12" fill="#132d47" stroke="#2c5873"/>
+    <text x="791" y="1280" fill="#7be1a9" style="font:700 13px 'Segoe UI',Arial">3 · BALANCE REAL</text>
+    <text x="791" y="1308" class="white" style="font:700 18px Georgia,serif">mgh = ½Mv² + ½I<tspan dy="5" font-size="12">eq</tspan><tspan dy="-5">ω² + W</tspan><tspan dy="5" font-size="12">pérdidas</tspan></text>
+    <text x="791" y="1332" class="muted" style="font:400 12px 'Segoe UI',Arial">Las pérdidas vienen de ejes, deformación, aire, desalineación y patinaje.</text>
+
+    <rect x="1207" y="1255" width="338" height="88" rx="12" fill="#132d47" stroke="#2c5873"/>
+    <text x="1227" y="1280" class="red" style="font:700 13px 'Segoe UI',Arial">4 · CONDICIÓN CLAVE</text>
+    <text x="1227" y="1308" class="white" style="font:700 20px Georgia,serif">v = ωR  ·  a = αR</text>
+    <text x="1227" y="1332" class="muted" style="font:400 12px 'Segoe UI',Arial">Debe existir rodadura sin deslizamiento para usar el modelo ideal.</text>
+  </g>
+
+  <text x="800" y="1389" text-anchor="middle" class="tiny">Propuesta conceptual · Verificar experimentalmente radios, masa óptima, liberación del hilo y pérdidas antes de la prueba oficial.</text>
+</svg>
