@@ -11,6 +11,19 @@ causas** de la **NTP 274** del INSHT.
 | `Arbol_de_Causas_Caida_Andamio.docx` | Informe completo (editable). |
 | `Arbol_de_Causas_Caida_Andamio.pdf` | Misma versión en PDF (7 páginas). |
 | `arbol_de_causas.png` | Solo el diagrama del árbol, para la exposición. |
+| `Presentacion_Arbol_de_Causas.pptx` | Presentación de 15 diapositivas (16:9) con notas del orador. |
+| `Presentacion_Arbol_de_Causas.pdf` | La misma presentación en PDF, para revisarla o proyectarla. |
+
+### Sobre la presentación
+
+- Cada diapositiva es una imagen a pantalla completa, así se ve igual en
+  cualquier equipo. Los nombres y códigos de la portada son **cuadros de
+  texto editables**: haz clic sobre `[Nombre completo del integrante 1]` y
+  escribe.
+- Cada diapositiva lleva **notas del orador** con lo que hay que decir (en
+  PowerPoint: *Vista > Notas*).
+- Para cambiar el contenido de una diapositiva, edita `_fuente/presentacion.py`
+  y vuelve a generar (ver abajo).
 
 ## Pendiente antes de entregar
 
@@ -39,12 +52,18 @@ renderizado).
 | `render.js` | Renderizado con Chromium (PNG y PDF). |
 | `validar_docx.py` | Validación estructural del `.docx` (orden OOXML, relaciones, tablas). |
 | `construir.py` | Genera diagrama, DOCX y PDF. Uso: `python3 construir.py [carpeta_salida]`. |
+| `presentacion.py` | Contenido y diseño de las 15 diapositivas, y notas del orador. |
+| `render_slides.js` | Captura cada diapositiva a PNG y detecta textos que no caben. |
+| `render_pptx.py` | Escribe el `.pptx` (PresentationML) y el PDF de la presentación. |
+| `validar_pptx.py` | Validación estructural del `.pptx`. |
+| `construir_ppt.py` | Genera la presentación. Uso: `python3 construir_ppt.py [carpeta_salida]`. |
 
 ### Regenerar los entregables
 
 ```bash
 cd _fuente
-python3 construir.py ..
+python3 construir.py ..       # informe y diagrama
+python3 construir_ppt.py ..   # presentación (usa ../arbol_de_causas.png)
 ```
 
 Requiere Python 3 y un Chromium accesible en `/usr/local/bin/chrome` (ajustar
