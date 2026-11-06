@@ -1,25 +1,28 @@
 # Cercha de balso: opciones de 40 a 50 barras
 
-Láminas con tres ideas de cercha para el proyecto final de Ingeniería de los Materiales. Todas mantienen las medidas del prototipo: 40 cm de base y 20 cm de alto, con dos caras iguales unidas por barras de soporte.
+Láminas con tres ideas de cercha para el proyecto final de Ingeniería de los Materiales. Todas mantienen las medidas del prototipo: 40 cm de base y 20 cm de alto, con dos caras iguales unidas por barras de soporte. La cuerda inferior de cada cara es una sola barra de 40 cm.
 
-| Opción | Barras | Barra crítica | Resistencia al pandeo (relativa a la opción 1) |
+| Opción | Barras | Barra crítica | Resistencia al pandeo (relativa a la opción 2) |
 |---|---|---|---|
-| 1 · Pratt de 4 paneles | 40 | A–F y E–H (−0.56P, 22.4 cm) | 1.0× |
-| 2 · Warren trapezoidal | 44 | A–F y E–I (−0.52P, 20.6 cm) | 1.3× |
-| 3 · Pratt arriostrada | 50 | C–G (−0.33P, 20.0 cm) | 2.1× |
+| 1 · Warren en W | 41 | B–F y F–C (−0.17P, 20.6 cm) | 1.8× |
+| 2 · Pratt arriostrada | 44 | C–G (−0.33P, 20.0 cm) | 1.0× |
+| 3 · Warren de 4 nodos | 50 | B–G y H–D (−0.26P, 20.6 cm) | 1.2× |
+
+La opción 1 es la recomendada: es la más resistente y la que usa menos barras.
 
 ## Láminas
 
 ![Comparación](04_comparacion_opciones.png)
-![Opción 1](01_opcion1_pratt_40barras.png)
-![Opción 2](02_opcion2_warren_44barras.png)
-![Opción 3](03_opcion3_pratt_arriostrada_50barras.png)
+![Opción 1](01_opcion1_warren_w_41barras.png)
+![Opción 2](02_opcion2_pratt_arriostrada_44barras.png)
+![Opción 3](03_opcion3_warren_arriostrada_50barras.png)
 
 Cada lámina trae la vista frontal con la fuerza de cada barra, una vista 3D con las barras de soporte (transversales, diagonales superiores y de portal), la tabla de fuerzas, la lista de corte y notas.
 
 ## Cómo se cuentan las barras
 
-- Cada tramo entre dos nodos cuenta como una barra.
+- La cuerda inferior de cada cara es una sola barra de 40 cm. Para el cálculo se divide en tramos entre nodos, pero se corta y se cuenta como una pieza. Las demás barras se pegan sobre ella en los nodos marcados.
+- Las demás barras cuentan una por tramo entre nodos.
 - Hay una transversal en cada nodo, uniendo la cara de adelante con la de atrás.
 - Las diagonales superiores arriostran la parte de arriba. Las diagonales de portal arriostran los planos inclinados de los extremos.
 

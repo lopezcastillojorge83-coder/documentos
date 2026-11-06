@@ -14,6 +14,11 @@ Uso:
 Convención: P es la carga que recibe UNA cara (la mitad de la carga de la
 máquina), repartida por igual entre los nodos de arriba. Fuerza positiva =
 tensión, negativa = compresión.
+
+Conteo de barras: la cuerda inferior de cada cara es UNA sola barra de 40 cm
+(se calcula por tramos entre nodos, pero se cuenta y se corta como una pieza).
+Las demás barras cuentan una por tramo entre nodos, más una transversal por
+nodo y las diagonales de soporte.
 """
 
 import math
@@ -58,109 +63,114 @@ TIPOS = {
 # ---------------------------------------------------------------------------
 
 
-def _pratt_base():
-    nodos = {
+def _opciones():
+    # Opción 1: Warren en W, 3 nodos arriba, inclinadas partidas en M y N
+    n1 = {
+        "A": (0, 0), "B": (15, 0), "C": (25, 0), "D": (40, 0),
+        "E": (5, 20), "F": (20, 20), "G": (35, 20),
+        "M": (2.5, 10), "N": (37.5, 10),
+    }
+    b1 = [
+        ("A", "B", "inf"), ("B", "C", "inf"), ("C", "D", "inf"),
+        ("E", "F", "sup"), ("F", "G", "sup"),
+        ("E", "B", "diag"), ("B", "F", "diag"), ("F", "C", "diag"), ("C", "G", "diag"),
+        ("A", "M", "incl"), ("M", "E", "incl"), ("D", "N", "incl"), ("N", "G", "incl"),
+        ("M", "B", "riostra"), ("N", "C", "riostra"),
+    ]
+
+    # Opción 2: Pratt de 4 paneles, inclinadas partidas en M y N
+    n2 = {
         "A": (0, 0), "B": (10, 0), "C": (20, 0), "D": (30, 0), "E": (40, 0),
         "F": (10, 20), "G": (20, 20), "H": (30, 20),
+        "M": (5, 10), "N": (35, 10),
     }
-    barras = [
+    b2 = [
         ("A", "B", "inf"), ("B", "C", "inf"), ("C", "D", "inf"), ("D", "E", "inf"),
         ("F", "G", "sup"), ("G", "H", "sup"),
         ("B", "F", "mont"), ("C", "G", "mont"), ("D", "H", "mont"),
         ("F", "C", "diag"), ("H", "C", "diag"),
+        ("A", "M", "incl"), ("M", "F", "incl"), ("E", "N", "incl"), ("N", "H", "incl"),
+        ("M", "B", "riostra"), ("N", "D", "riostra"),
     ]
-    return nodos, barras
 
-
-def _opciones():
-    n1, b1 = _pratt_base()
-    b1 += [("A", "F", "incl"), ("E", "H", "incl")]
-
-    n2 = {
+    # Opción 3: Warren de 4 nodos arriba, inclinadas partidas en M y N
+    n3 = {
         "A": (0, 0), "B": (10, 0), "C": (20, 0), "D": (30, 0), "E": (40, 0),
         "F": (5, 20), "G": (15, 20), "H": (25, 20), "I": (35, 20),
+        "M": (2.5, 10), "N": (37.5, 10),
     }
-    b2 = [
+    b3 = [
         ("A", "B", "inf"), ("B", "C", "inf"), ("C", "D", "inf"), ("D", "E", "inf"),
         ("F", "G", "sup"), ("G", "H", "sup"), ("H", "I", "sup"),
         ("F", "B", "diag"), ("B", "G", "diag"), ("G", "C", "diag"),
         ("C", "H", "diag"), ("H", "D", "diag"), ("D", "I", "diag"),
-        ("A", "F", "incl"), ("E", "I", "incl"),
-    ]
-
-    n3, b3 = _pratt_base()
-    n3.update({"M": (5, 10), "N": (35, 10)})
-    b3 += [
-        ("A", "M", "incl"), ("M", "F", "incl"), ("E", "N", "incl"), ("N", "H", "incl"),
+        ("A", "M", "incl"), ("M", "F", "incl"), ("E", "N", "incl"), ("N", "I", "incl"),
         ("M", "B", "riostra"), ("N", "D", "riostra"),
     ]
 
     return [
         dict(
             num=1,
-            archivo="01_opcion1_pratt_40barras",
-            titulo="Opción 1 · Pratt trapezoidal de 4 paneles",
-            corto="Pratt de 4 paneles",
-            nodos=n1, barras=b1, arriba=["F", "G", "H"],
+            archivo="01_opcion1_warren_w_41barras",
+            titulo="Opción 1 · Warren en W con inclinadas arriostradas",
+            corto="Warren en W",
+            nodos=n1, barras=b1, arriba=["E", "F", "G"], apoyos=("A", "D"),
             # Diagonales de soporte: (nodo de la cara delantera, nodo de la cara trasera)
-            sup=[("F", "G"), ("H", "G")],
-            portal=[("A", "F"), ("E", "H")],
-            inf=[("A", "B"), ("E", "D")],
+            sup=[("E", "F"), ("G", "F")],
+            portal=[("A", "M"), ("M", "E"), ("D", "N"), ("N", "G")],
+            inf=[],
             notas=[
-                "Las inclinadas A–F y E–H llevan la mayor compresión y son las "
-                "barras más largas. Son las candidatas a fallar por pandeo.",
-                "B–F y D–H tienen fuerza cero, pero sostienen la cuerda inferior "
-                "y toman carga si el ensayo no queda centrado. No las quites.",
-                "Las diagonales F–C y H–C trabajan a tensión, que la balsa "
-                "resiste bien.",
-                "Si el cabezal es angosto y solo toca G, el montante C–G recibe "
-                "toda la carga P y pasa a ser la barra crítica.",
+                "La cuerda inferior A–D es una sola barra de 40 cm. Marca en ella "
+                "los nodos B (a 15 cm) y C (a 25 cm).",
+                "B–F y F–C se reparten la carga del centro y son las críticas. "
+                "Usa ahí tus palitos más rectos y densos.",
+                "M–B y N–C tienen fuerza cero, pero parten cada inclinada en dos "
+                "tramos de 10.3 cm.",
             ],
-            pros="La que usa menos barras.",
-            contras="Inclinadas largas y con la mayor compresión.",
+            pros="La más resistente y con menos barras.",
+            contras="Paneles de arriba de 15 cm: se doblan más si el cabezal "
+                    "apoya entre nodos.",
         ),
         dict(
             num=2,
-            archivo="02_opcion2_warren_44barras",
-            titulo="Opción 2 · Warren trapezoidal",
-            corto="Warren trapezoidal",
-            nodos=n2, barras=b2, arriba=["F", "G", "H", "I"],
-            sup=[("F", "G"), ("G", "H"), ("I", "H")],
-            portal=[("A", "F"), ("E", "I")],
-            inf=[],
-            notas=[
-                "Las inclinadas A–F y E–I son las críticas. B–G y D–H también "
-                "trabajan a compresión, con la mitad de fuerza.",
-                "G–C y C–H tienen fuerza cero con carga simétrica. Se necesitan "
-                "si la carga se descentra.",
-                "Las 8 barras inclinadas de cada cara miden lo mismo: solo hay "
-                "dos medidas por cara.",
-                "No hay nodo arriba en el centro. Si el cabezal es angosto, "
-                "apoya en la mitad de G–H y la dobla.",
-            ],
-            pros="Misma silueta que tu prototipo. Solo dos medidas por cara.",
-            contras="No tiene nodo arriba en el centro.",
-        ),
-        dict(
-            num=3,
-            archivo="03_opcion3_pratt_arriostrada_50barras",
-            titulo="Opción 3 · Pratt con inclinadas arriostradas",
+            archivo="02_opcion2_pratt_arriostrada_44barras",
+            titulo="Opción 2 · Pratt con inclinadas arriostradas",
             corto="Pratt arriostrada",
-            nodos=n3, barras=b3, arriba=["F", "G", "H"],
+            nodos=n2, barras=b2, arriba=["F", "G", "H"], apoyos=("A", "E"),
             sup=[("F", "G"), ("H", "G")],
             portal=[("A", "M"), ("M", "F"), ("E", "N"), ("N", "H")],
             inf=[],
             notas=[
+                "La cuerda inferior A–E es una sola barra de 40 cm, con nodos "
+                "cada 10 cm.",
                 "M–B y N–D tienen fuerza cero, pero parten cada inclinada en dos "
-                "tramos de 11.2 cm. Su resistencia al pandeo sube unas 4 veces.",
-                "Las transversales en M y N y las 4 diagonales de portal evitan "
-                "que las inclinadas se pandeen hacia afuera de la cara.",
-                "La barra crítica pasa a ser el montante central C–G.",
-                "Si el cabezal es angosto y solo toca G, C–G recibe toda la "
-                "carga P.",
+                "tramos de 11.2 cm.",
+                "B–F y D–H tienen fuerza cero, pero sostienen la cuerda inferior. "
+                "No las quites.",
             ],
-            pros="La más resistente al pandeo.",
-            contras="Usa el máximo de 50 barras.",
+            pros="Las diagonales largas trabajan a tensión.",
+            contras="Todo el centro descansa en un solo montante, C–G.",
+        ),
+        dict(
+            num=3,
+            archivo="03_opcion3_warren_arriostrada_50barras",
+            titulo="Opción 3 · Warren de 4 nodos con inclinadas arriostradas",
+            corto="Warren de 4 nodos",
+            nodos=n3, barras=b3, arriba=["F", "G", "H", "I"], apoyos=("A", "E"),
+            sup=[("F", "G"), ("G", "H"), ("I", "H")],
+            portal=[("A", "M"), ("M", "F"), ("E", "N"), ("N", "I")],
+            inf=[],
+            notas=[
+                "La cuerda inferior A–E es una sola barra de 40 cm, con nodos "
+                "cada 10 cm.",
+                "M–B y N–D parten cada inclinada en dos tramos de 10.3 cm.",
+                "B–G y D–H son las críticas. G–C y C–H tienen fuerza cero con "
+                "carga simétrica.",
+                "No hay nodo arriba en el centro. Si el cabezal es angosto, "
+                "apoya en la mitad de G–H y la dobla.",
+            ],
+            pros="Paneles de arriba más cortos (10 cm).",
+            contras="Usa 50 barras y no tiene nodo arriba en el centro.",
         ),
     ]
 
@@ -220,14 +230,11 @@ def resolver_nodos(nodos, barras, cargas, apoyos):
     return sol[: len(barras)], sol[len(barras):]
 
 
-def analizar(op):
+def _caso_carga(op, cargas):
     nodos, barras = op["nodos"], op["barras"]
-    m, j = len(barras), len(nodos)
-    assert m == 2 * j - 3, f"Opción {op['num']}: m = {m}, 2j - 3 = {2 * j - 3}"
-    q = -1.0 / len(op["arriba"])
-    cargas = {n: (0.0, q) for n in op["arriba"]}
+    izq, der = op["apoyos"]
     fuerzas, reacciones = resolver_nodos(
-        nodos, [(a, b) for a, b, _ in barras], cargas, [("A", "x"), ("A", "y"), ("E", "y")]
+        nodos, [(a, b) for a, b, _ in barras], cargas, [(izq, "x"), (izq, "y"), (der, "y")]
     )
     largos = [dist(nodos[a], nodos[b]) for a, b, _ in barras]
     # Índice de pandeo |F|·L²: con la misma sección y E en todas las barras,
@@ -235,11 +242,47 @@ def analizar(op):
     indices = [(-f) * L * L if f < -1e-9 else 0.0 for f, L in zip(fuerzas, largos)]
     imax = max(indices)
     criticas = [k for k, v in enumerate(indices) if v > 0.99 * imax]
-    total = 2 * m + j + len(op["sup"]) + len(op["portal"]) + len(op["inf"])
+    return fuerzas, reacciones, largos, imax, criticas
+
+
+def analizar(op):
+    nodos, barras = op["nodos"], op["barras"]
+    m, j = len(barras), len(nodos)
+    assert m == 2 * j - 3, f"Opción {op['num']}: m = {m}, 2j - 3 = {2 * j - 3}"
+    q = -1.0 / len(op["arriba"])
+    fuerzas, reacciones, largos, imax, criticas = _caso_carga(
+        op, {n: (0.0, q) for n in op["arriba"]}
+    )
+
+    # Caso de cabezal angosto: toda la carga P en el nodo de arriba del centro
+    centro = None
+    nodo_c = [n for n in op["arriba"] if abs(nodos[n][0] - 20) < 1e-9]
+    if nodo_c:
+        fc, _, _, _, crit_c = _caso_carga(op, {nodo_c[0]: (0.0, -1.0)})
+        centro = dict(nodo=nodo_c[0], criticas=crit_c, fuerza=fc[crit_c[0]])
+
+    # La cuerda inferior se calcula por tramos, pero es una sola barra por cara
+    tramos_inf = sum(1 for _, _, t in barras if t == "inf")
+    por_cara = m - tramos_inf + 1
+    total = 2 * por_cara + j + len(op["sup"]) + len(op["portal"]) + len(op["inf"])
     return dict(
         fuerzas=fuerzas, reacciones=reacciones, largos=largos, indice=imax,
-        criticas=criticas, m=m, j=j, total=total, carga=q,
+        criticas=criticas, m=m, j=j, por_cara=por_cara, total=total, carga=q,
+        centro=centro,
     )
+
+
+def nota_cabezal(op, res):
+    c = res["centro"]
+    if c is None:
+        return None
+    nombres = [nombre_barra(*op["barras"][k][:2]) for k in c["criticas"]]
+    if len(nombres) == 1:
+        sujeto = f"la barra crítica es {nombres[0]}"
+    else:
+        sujeto = f"las barras críticas son {' y '.join(nombres)}"
+    return (f"Si el cabezal es angosto y solo toca {c['nodo']}, {sujeto} "
+            f"({fmt_fuerza(c['fuerza'])}).")
 
 
 def dist(p, q):
@@ -424,7 +467,8 @@ def dibujar_frontal(lz, op, res, ox, oy, s, compacto=False):
             lz.texto(x, y - largo_f - 14, f"P/{n_arriba}", 15, C["ink"], "700", "middle")
 
     # Apoyos
-    for n, rodillo in (("A", False), ("E", True)):
+    izq, der = op["apoyos"]
+    for n, rodillo in ((izq, False), (der, True)):
         x, y = P(n)
         h = 15 if compacto else 20
         w = 10 if compacto else 13
@@ -449,9 +493,9 @@ def dibujar_frontal(lz, op, res, ox, oy, s, compacto=False):
     for n, (nx, ny) in nodos.items():
         x, y = P(n)
         if ny == 0:
-            if n == "A":
+            if n == izq:
                 lz.texto(x - 14, y + 18, n, tam_n, C["ink"], "700", "end")
-            elif n == "E":
+            elif n == der:
                 lz.texto(x + 14, y + 18, n, tam_n, C["ink"], "700", "start")
             else:
                 lz.texto(x, y + (18 if compacto else 25), n, tam_n, C["ink"], "700", "middle")
@@ -462,15 +506,21 @@ def dibujar_frontal(lz, op, res, ox, oy, s, compacto=False):
             lz.texto(x + (-12 if izquierda else 12), y + 5, n, tam_n, C["ink"], "700",
                      "end" if izquierda else "start")
 
-    # Etiquetas de fuerza (en compacto solo las críticas)
+    # Etiquetas de fuerza (en compacto solo las críticas, sin que se encimen)
+    puestas = []
     for k, (a, b, _) in enumerate(op["barras"]):
         if compacto and k not in res["criticas"]:
             continue
         (x1, y1), (x2, y2) = P(a), P(b)
+        xm, ym = (x1 + x2) / 2, (y1 + y2) / 2
+        if compacto and any(math.hypot(xm - px, ym - py) < 75 for px, py in puestas):
+            continue
+        puestas.append((xm, ym))
         f = res["fuerzas"][k]
         etiqueta(lz, (x1 + x2) / 2, (y1 + y2) / 2, fmt_fuerza(f), color_fuerza(f), 12 if compacto else 14)
 
     if compacto:
+        lz.texto(ox + 20 * s, oy + 40, "Cuerda inferior: una sola barra", 13, C["tens"], "700", "middle")
         return
 
     # Cotas
@@ -485,7 +535,8 @@ def dibujar_frontal(lz, op, res, ox, oy, s, compacto=False):
         lz.linea(X, y_pan + 6, X, y_tot + 6, C["muted"], 1)
     for x1, x2 in zip(xs_inf, xs_inf[1:]):
         cota_h(lz, ox + x1 * s, ox + x2 * s, y_pan, f"{x2 - x1:g} cm", 13)
-    cota_h(lz, ox + xs_inf[0] * s, ox + xs_inf[-1] * s, y_tot, f"{xs_inf[-1] - xs_inf[0]:g} cm", 15)
+    cota_h(lz, ox + xs_inf[0] * s, ox + xs_inf[-1] * s, y_tot,
+           f"{xs_inf[-1] - xs_inf[0]:g} cm · cuerda inferior de una sola barra", 15)
 
     y_sup = ytop - 96
     for x in (xs_sup[0], xs_sup[-1]):
@@ -572,8 +623,9 @@ def dibujar_3d(lz, op, res, caja):
     top = op["arriba"]
     xt, yt = N(top[-1], B)
     lz.texto(xt + 18, yt - 6, "Cara trasera", 15, C["wood_dark"], "700", "start")
-    xe, ye = N("E", 0)
-    xe2, ye2 = N("E", B)
+    der = op["apoyos"][1]
+    xe, ye = N(der, 0)
+    xe2, ye2 = N(der, B)
     lz.texto((xe + xe2) / 2 + 16, (ye + ye2) / 2 + 20, f"b = {fmt_b()} cm", 15, C["trans"], "700")
     xr, yr = S(0, -1.2, -2.5)
     lz.texto(xr - 8, yr + 22, "Rodillos de apoyo", 13, C["muted"], "600", "middle")
@@ -593,13 +645,13 @@ def encabezado(lz, titulo, subtitulo, insignia=None):
         lz.texto(lz.ancho - 40 - w / 2, 72, insignia, 28, "#ffffff", "700", "middle")
 
 
-def lamina_opcion(op, res, rel):
+def lamina_opcion(op, res, rel, num_base):
     W, H = 1600, 1244
     lz = Lienzo(W, H)
     encabezado(
         lz, op["titulo"],
         f"Proyecto final de Ingeniería de los Materiales · balso · base 40 cm · alto 20 cm · "
-        f"separación entre caras b = {fmt_b()} cm",
+        f"b = {fmt_b()} cm · cuerda inferior de una sola barra",
         f"{res['total']} barras",
     )
 
@@ -617,7 +669,7 @@ def lamina_opcion(op, res, rel):
     lz.tarjeta(850, 130, 710, 590, "Vista 3D: caras y barras de soporte")
     dibujar_3d(lz, op, res, (885, 190, 1525, 585))
     filas = [
-        (C["wood_dark"], f"Caras: 2 × {res['m']} = {2 * res['m']}"),
+        (C["wood_dark"], f"Caras: 2 × {res['por_cara']} = {2 * res['por_cara']}"),
         (C["trans"], f"Transversales (una por nodo): {res['j']}"),
         (C["sup"], f"Diagonales superiores: {len(op['sup'])}"),
         (C["portal"], f"Diagonales de portal: {len(op['portal'])}"),
@@ -634,6 +686,7 @@ def lamina_opcion(op, res, rel):
     lz.tarjeta(40, 745, 670, 425, "Fuerza en cada barra (una cara)")
     barras = op["barras"]
     mitad = (len(barras) + 1) // 2
+    paso_t = 33 if mitad <= 9 else 29
     for g, grupo in enumerate((range(0, mitad), range(mitad, len(barras)))):
         gx = 62 + g * 325
         y = 806
@@ -642,25 +695,32 @@ def lamina_opcion(op, res, rel):
             lz.texto(gx + cx, y, t, 14, C["muted"], "700", an)
         lz.linea(gx, y + 9, gx + 305, y + 9, C["border"], 1.5)
         for i, k in enumerate(grupo):
-            a, b, _ = barras[k]
+            a, b, tipo = barras[k]
             f = res["fuerzas"][k]
-            ry = y + 34 + i * 33
+            ry = y + 34 + i * paso_t
             if k in res["criticas"]:
                 lz.rect(gx - 8, ry - 21, 321, 30, C["crit"], radio=6, opacidad=0.55)
-            lz.texto(gx, ry, nombre_barra(a, b), 16, C["ink"], "700")
+            nombre = nombre_barra(a, b) + ("*" if tipo == "inf" else "")
+            lz.texto(gx, ry, nombre, 16, C["ink"], "700")
             lz.texto(gx + 128, ry, fmt_fuerza(f), 16, color_fuerza(f), "700", "end")
             lz.texto(gx + 232, ry, trabajo(f), 15, color_fuerza(f), "600", "end")
             lz.texto(gx + 305, ry, fmt_cm(res["largos"][k]), 15, C["ink"], "400", "end")
+    lz.texto(62, 1132, "* Tramo de la cuerda inferior, que es una sola barra.", 13, C["muted"])
     lz.texto(62, 1150, "Fondo amarillo: barra crítica (la comprimida con mayor |F|·L², se pandea primero).",
              13, C["muted"])
 
     # Lista de corte
     lz.tarjeta(735, 745, 420, 425, "Lista de corte")
+    xs_inf = [op["nodos"][n][0] for n in op["nodos"] if op["nodos"][n][1] == 0]
+    filas = [("Cuerda inferior completa", 2, fmt_cm(max(xs_inf) - min(xs_inf)))]
     grupos = {}
     for (a, b, t), L in zip(barras, res["largos"]):
+        if t == "inf":
+            continue
         clave = (TIPOS[t], str(redondear(L, "0.1")))
         grupos[clave] = grupos.get(clave, 0) + 2
-    filas = [(n, q, f"{L} cm") for (n, L), q in grupos.items()]
+    filas += [(n, q, f"{L} cm") for (n, L), q in grupos.items()]
+    n_cara = len(filas)
     sop = {"Transversales": [B] * res["j"]}
     for clave, nombre in (("sup", "Diagonales superiores"), ("portal", "Diagonales de portal"),
                           ("inf", "Diagonales inferiores")):
@@ -680,14 +740,14 @@ def lamina_opcion(op, res, rel):
     paso = 25
     for i, (n, q, L) in enumerate(filas):
         ry = y + 31 + i * paso
-        es_soporte = i >= len(grupos)
-        lz.texto(757, ry, n, 15, C["trans"] if es_soporte else C["ink"])
+        es_soporte = i >= n_cara
+        lz.texto(757, ry, n, 15, C["trans"] if es_soporte else C["ink"], "700" if i == 0 else "400")
         lz.texto(1032, ry, str(q), 15, C["ink"], "700", "end")
-        lz.texto(1133, ry, L, 15, C["ink"], "400", "end")
+        lz.texto(1133, ry, L, 15, C["ink"], "700" if i == 0 else "400", "end")
     ry = y + 31 + len(filas) * paso - 8
     lz.linea(757, ry, 1133, ry, C["border"], 1.5)
     total_piezas = sum(q for _, q, _ in filas)
-    assert total_piezas == res["total"]
+    assert total_piezas == res["total"], (total_piezas, res["total"])
     lz.texto(757, ry + 22, "Total", 15, C["ink"], "700")
     lz.texto(1032, ry + 22, str(total_piezas), 15, C["ink"], "700", "end")
     lz.texto(757, 1132, "Medidas de centro a centro de nodo. Al cortar, réstale", 13, C["muted"])
@@ -695,16 +755,23 @@ def lamina_opcion(op, res, rel):
 
     # Notas
     lz.tarjeta(1180, 745, 380, 425, "Para tener en cuenta")
+    notas = list(op["notas"])
+    extra = nota_cabezal(op, res)
+    if extra:
+        notas.append(extra)
     y = 800
-    for nota in op["notas"]:
-        lineas = envolver(nota, 40)
+    for nota in notas:
         lz.circulo(1205, y - 5, 4, C["badge"])
-        for ln in lineas:
+        for ln in envolver(nota, 40):
             lz.texto(1218, y, ln, 15, C["ink"])
             y += 21
         y += 10
-    lz.texto(1202, 1150, f"Resistencia al pandeo: {redondear(rel, '0.1')}× la de la opción 1",
-             14, C["badge"], "700")
+    assert y < 1140, f"Notas demasiado largas en la opción {op['num']}"
+    if op["num"] == num_base:
+        texto_rel = "Resistencia al pandeo: la menor de las tres (1.0×)"
+    else:
+        texto_rel = f"Resistencia al pandeo: {redondear(rel, '0.1')}× la de la opción {num_base}"
+    lz.texto(1202, 1150, texto_rel, 14, C["badge"], "700")
 
     lz.texto(
         40, 1205,
@@ -722,25 +789,25 @@ def lamina_opcion(op, res, rel):
 # ---------------------------------------------------------------------------
 
 
-def lamina_comparacion(opciones, resultados, rels):
-    W, H = 1600, 1060
+def lamina_comparacion(opciones, resultados, rels, num_base):
+    W, H = 1600, 1140
     lz = Lienzo(W, H)
     encabezado(
         lz, "Comparación de las opciones de cercha",
-        "Balso · base 40 cm · alto 20 cm · la misma sección en todas las barras · "
-        f"separación entre caras b = {fmt_b()} cm",
+        "Balso · base 40 cm · alto 20 cm · cuerda inferior de una sola barra · "
+        f"misma sección en todas las barras · b = {fmt_b()} cm",
     )
     rel_max = max(rels)
     for i, (op, res, rel) in enumerate(zip(opciones, resultados, rels)):
         x0 = 40 + i * 515
         w = 490
-        lz.tarjeta(x0, 130, w, 740)
+        lz.tarjeta(x0, 130, w, 810)
         lz.texto(x0 + 24, 170, f"Opción {op['num']}", 16, C["muted"], "700")
         lz.texto(x0 + 24, 202, op["corto"], 25, C["ink"], "700")
         lz.rect(x0 + w - 24 - 132, 152, 132, 44, C["badge"], radio=22)
         lz.texto(x0 + w - 24 - 66, 182, f"{res['total']} barras", 19, "#ffffff", "700", "middle")
 
-        dibujar_frontal(lz, op, res, x0 + 45, 480, 10, compacto=True)
+        dibujar_frontal(lz, op, res, x0 + 45, 470, 10, compacto=True)
 
         crit = res["criticas"]
         nombres = " y ".join(nombre_barra(*op["barras"][k][:2]) for k in crit)
@@ -751,48 +818,69 @@ def lamina_comparacion(opciones, resultados, rels):
         lz.texto(x0 + 24, y + 28, nombres, 22, C["ink"], "700")
         lz.texto(x0 + 24, y + 62, "Fuerza y largo", 14, C["muted"], "700")
         lz.texto(x0 + 24, y + 90, f"{fmt_fuerza(f)}  ·  {fmt_cm(L)}", 22, C["comp"], "700")
-        lz.texto(x0 + 24, y + 124, "Resistencia al pandeo (relativa a la opción 1)", 14, C["muted"], "700")
+        lz.texto(x0 + 24, y + 124, f"Resistencia al pandeo (relativa a la opción {num_base})",
+                 14, C["muted"], "700")
         bw = 330 * rel / rel_max
         lz.rect(x0 + 24, y + 138, 330, 26, "#eceff1", radio=13)
         lz.rect(x0 + 24, y + 138, bw, 26, C["badge"], radio=13)
         lz.texto(x0 + 24 + 330 + 14, y + 158, f"{redondear(rel, '0.1')}×", 22, C["badge"], "700")
 
-        y = 770
+        y = 760
+        lz.texto(x0 + 24, y, "Si el cabezal solo toca el centro", 14, C["muted"], "700")
+        c = res["centro"]
+        if c:
+            nc = " y ".join(nombre_barra(*op["barras"][k][:2]) for k in c["criticas"])
+            lz.texto(x0 + 24, y + 26, f"{nc}: {fmt_fuerza(c['fuerza'])}", 18, C["ink"], "700")
+        else:
+            lz.texto(x0 + 24, y + 26, "Apoya en la mitad de una barra y la dobla", 18, C["ink"], "700")
+
+        y = 830
         for signo, color, texto in (("+", C["badge"], op["pros"]), ("−", C["comp"], op["contras"])):
             lz.circulo(x0 + 34, y - 6, 11, color)
             lz.texto(x0 + 34, y - 0.5, signo, 18, "#ffffff", "700", "middle")
-            for ln in envolver(texto, 40):
+            for ln in envolver(texto, 42):
                 lz.texto(x0 + 54, y, ln, 16, C["ink"])
                 y += 22
-            y += 18
+            y += 14
+        assert y < 945, f"Texto demasiado largo en la tarjeta de la opción {op['num']}"
 
-    lz.rect(40, 890, 1520, 100, "#e8f5e9", "#a5d6a7", 1.5, radio=14)
-    lz.rect(40, 890, 10, 100, C["badge"], radio=4)
-    lz.texto(70, 928, "Recomendación", 18, C["badge"], "700")
-    lz.texto(70, 960,
-             "Opción 3 si puedes usar 50 barras. Opción 2 si quieres menos barras y la misma silueta "
-             "de tu prototipo.", 18, C["ink"])
-    lz.texto(40, 1020,
-             "Resistencia relativa: |F|·L² de la barra crítica de la opción 1 dividido entre el de cada "
-             "opción (misma sección y mismo E en todas las barras).", 14, C["muted"])
-    lz.texto(40, 1042,
-             "P es la carga en una cara, repartida por igual entre los nodos de arriba. Si el cabezal "
-             "es angosto, la barra crítica puede cambiar.", 14, C["muted"])
+    mejor = max(range(len(rels)), key=lambda k: rels[k])
+    menos_barras = min(range(len(resultados)), key=lambda k: resultados[k]["total"])
+    assert mejor == menos_barras == 0, "Revisa el texto de la recomendación"
+    lz.rect(40, 960, 1520, 112, "#e8f5e9", "#a5d6a7", 1.5, radio=14)
+    lz.rect(40, 960, 10, 112, C["badge"], radio=4)
+    lz.texto(70, 996, "Recomendación", 18, C["badge"], "700")
+    lz.texto(70, 1027,
+             f"Opción 1: es la más resistente y la que usa menos barras ({resultados[0]['total']}).",
+             18, C["ink"], "700")
+    lz.texto(70, 1055,
+             "Las opciones 2 y 3 usan más barras y resisten menos: manda la barra comprimida más cargada "
+             "y más larga, no la cantidad de barras.", 17, C["ink"])
+    lz.texto(40, 1102,
+             f"Resistencia relativa: |F|·L² de la barra crítica de la opción {num_base} dividido entre el "
+             "de cada opción (misma sección y mismo E en todas las barras).", 14, C["muted"])
+    lz.texto(40, 1124,
+             "P es la carga en una cara, repartida por igual entre los nodos de arriba. La cuerda inferior "
+             "de cada cara cuenta como una sola barra.", 14, C["muted"])
     lz.guardar(os.path.join(CARPETA, "04_comparacion_opciones.svg"))
 
 
 def main():
     opciones = _opciones()
     resultados = [analizar(op) for op in opciones]
-    base = resultados[0]["indice"]
+    # Base de comparación: la opción menos resistente (mayor índice |F|·L²)
+    k_base = max(range(len(resultados)), key=lambda k: resultados[k]["indice"])
+    num_base = opciones[k_base]["num"]
+    base = resultados[k_base]["indice"]
     rels = [base / r["indice"] for r in resultados]
     for op, res, rel in zip(opciones, resultados, rels):
-        lamina_opcion(op, res, rel)
-        print(f"\nOpción {op['num']} ({op['corto']}): {res['total']} barras, "
-              f"m = {res['m']}, j = {res['j']}, resistencia relativa {rel:.2f}")
+        lamina_opcion(op, res, rel, num_base)
+        print(f"\nOpción {op['num']} ({op['corto']}): {res['total']} barras "
+              f"({res['por_cara']} por cara), m = {res['m']}, j = {res['j']}, "
+              f"resistencia relativa {rel:.2f}")
         for (a, b, _), f, L in zip(op["barras"], res["fuerzas"], res["largos"]):
             print(f"  {a}-{b}: {f:+.4f} P   L = {L:.2f} cm")
-    lamina_comparacion(opciones, resultados, rels)
+    lamina_comparacion(opciones, resultados, rels, num_base)
 
 
 if __name__ == "__main__":
