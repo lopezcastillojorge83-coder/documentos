@@ -8,10 +8,11 @@ Caso: caída de 4,35 m desde un banco de lavado de aeronaves en la posición Gol
 
 | Archivo | Contenido |
 |---|---|
-| `01_FURAT_ARL_SURA_AT_13-08-2026_diligenciado.xlsx` | FURAT de ARL SURA (F 2015-PR v3) diligenciado. La hoja "Notas y supuestos" indica la fuente de cada dato. |
+| `01_FURAT_ARL_SURA_AT_13-08-2026_diligenciado.xls` | **El formulario original de ARL SURA** (`furat.xls`, F 2015-PR v3) diligenciado sobre el mismo archivo: mismas hojas, macros, formato y casillas. Solo se llenaron los campos y se marcaron las casillas. |
+| `01_FURAT_ARL_SURA_AT_13-08-2026_diligenciado.xlsx` | Versión anterior (reproducción del formato) con la hoja "Notas y supuestos", que indica la fuente de cada dato. |
 | `02_Investigacion_OSALAN_Causas_PlanMejoramiento_Integrante4.docx` | Informe en Word: árbol de causas (método OSALAN) con pasos, hechos e hipótesis; cálculo de caída libre y claridad; formato de investigación de la Res. 1401 de 2007 con causas inmediatas y básicas; plan de mejoramiento; costos ocultos con tres artículos Q1; referencias IEEE. |
 | `figuras/` | Secuencia cronológica, árbol de causas y esquema de claridad en PNG. |
-| `_fuente/` | Scripts en Python que generan el Excel, el Word y las figuras. |
+| `_fuente/` | Scripts en Python que generan el Excel, el Word y las figuras. `_fuente/furat_xls/` llena el `furat.xls` original. |
 
 ## Pendiente antes de entregar
 
@@ -20,7 +21,8 @@ Caso: caída de 4,35 m desde un banco de lavado de aeronaves en la posición Gol
 3. Completar los nombres de los integrantes del equipo investigador, las firmas y la copia de la licencia.
 4. Revisar las inconsistencias de la guía (tabla 2 del Word): fecha del turno, nombre de la clínica, apellidos y norma ANSI.
 5. Descargar los PDF de los tres artículos desde la Biblioteca UD, verificar su cuartil en SJR y anexarlos.
-6. Abrir el Word y el Excel y revisar la página horizontal del árbol de causas y la impresión del FURAT.
+6. En el FURAT original quedaron en blanco las casillas sombreadas (códigos de EPS, ARL, AFP, actividad, municipio y ocupación), que son de uso de la ARL, y la firma.
+7. Abrir el Word y el Excel y revisar la página horizontal del árbol de causas y la impresión del FURAT.
 
 ## Regenerar los archivos
 
@@ -31,4 +33,7 @@ CHROME_BIN=/ruta/a/chrome python _fuente/gen_figs.py
 python _fuente/gen_furat.py
 python _fuente/gen_doc.py
 python _fuente/validate.py *.xlsx *.docx
+# FURAT original: datos en _fuente/furat_xls/targets.py
+python _fuente/furat_xls/fill_furat.py ../furat.xls 01_FURAT_ARL_SURA_AT_13-08-2026_diligenciado.xls
+python _fuente/furat_xls/validate_xls.py ../furat.xls 01_FURAT_ARL_SURA_AT_13-08-2026_diligenciado.xls
 ```
