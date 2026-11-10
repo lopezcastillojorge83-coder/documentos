@@ -120,6 +120,18 @@ CHECK = [
     "CheckBox123",  # Responsable: CC
 ]
 
+# Celdas que quedan debajo de los controles ActiveX. Se escribe también una X literal para
+# que la selección sea visible en Excel, LibreOffice y visores que no carguen ActiveX.
+# Los XF 89 y 181 son formatos originales del mismo libro: texto negro, negrita y centrado.
+CHECK_X_CELLS = {
+    "U8": 89, "T11": 89, "Y16": 89, "AS22": 89,
+    "AA24": 89, "AQ30": 89, "O33": 89, "E39": 89,
+    "AQ39": 89, "AD45": 89, "AN50": 89, "G59": 89,
+    "O59": 89, "AU63": 181, "K67": 181, "AP67": 89,
+    "W70": 89, "D76": 89, "U79": 89, "D90": 89,
+    "S94": 89, "AI90": 89, "AO108": 89, "AN122": 89,
+}
+
 DESC = (
     "QUÉ: caída de persona desde un banco-escalera de lavado de aeronaves (plano de trabajo a 4,35 m) "
     "hasta el piso; golpe en la cabeza. "
