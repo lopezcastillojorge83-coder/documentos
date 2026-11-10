@@ -15,7 +15,7 @@ Caso: caída de 4,35 m desde un banco de lavado de aeronaves en la posición Gol
 
 ## Estado del FURAT
 
-Se diligenciaron los campos aplicables del caso, incluidas las casillas sombreadas para la entrega académica: códigos EPS, ARL, AFP, actividad económica, centro de trabajo, departamento, municipio y ocupación. Los campos condicionados que no aplican indican `NO APLICA`. Las casillas seleccionadas tienen valor ActiveX y una marca visible estática.
+Se diligenciaron los campos aplicables del caso, incluidas las casillas sombreadas para la entrega académica: códigos EPS, ARL, AFP, actividad económica, centro de trabajo, departamento, municipio y ocupación. Los campos condicionados que no aplican indican `NO APLICA`. Cada opción seleccionada contiene una **X literal en la celda**, además del estado ActiveX y una imagen estática con X, para que la marca siga visible aunque el visor no cargue controles ActiveX.
 
 La firma no se falsificó: el campo indica `PENDIENTE DE FIRMA MANUSCRITA`.
 

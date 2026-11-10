@@ -4,8 +4,8 @@
 Cambios que hace, y solo esos:
   * Hoja "FORMATO FURAT": escribe textos en las celdas en blanco de cada campo (conservando su formato)
     y reemplaza las letras guía D/M/A/H por los dígitos (con un formato existente de letra negra).
-  * Marca las casillas ActiveX (Value = "1" en el flujo Ctls) y actualiza su imagen guardada
-    (EMF del almacén de imágenes) para que se vea el chulo aunque Excel tenga ActiveX deshabilitado.
+  * Marca las casillas ActiveX (Value = "1" en el flujo Ctls), dibuja una X en su imagen guardada
+    y escribe una X literal en la celda inferior para que se vea también sin soporte ActiveX.
   * Agrega las cadenas nuevas al final de la tabla SST y recalcula EXTSST, DBCELL, INDEX y BOUNDSHEET.
 El proyecto VBA, las demás hojas y los demás flujos quedan iguales.
 """
@@ -20,7 +20,7 @@ import cfb
 import drawing as dr
 import sheetmodel as sm
 import xlsfix
-from targets import TEXT, CHECK, DESC
+from targets import TEXT, CHECK, CHECK_X_CELLS, DESC
 
 SRC = sys.argv[1] if len(sys.argv) > 1 else "furat_original.xls"
 DST = sys.argv[2] if len(sys.argv) > 2 else "furat_diligenciado.xls"
@@ -49,17 +49,17 @@ def xlstr(s):
 
 
 # ------------------------------------------------------------------ imagen de casilla marcada
-CHECK_GLYPH = ["......#",
-               ".....##",
-               "#...###",
-               "##.###.",
-               "#####..",
-               ".###...",
-               "..#...."]
+CHECK_GLYPH = ["#.....#",
+               ".#...#.",
+               "..#.#..",
+               "...#...",
+               "..#.#..",
+               ".#...#.",
+               "#.....#"]
 
 
 def checked_bits(bits, w, h, stride):
-    """Dibuja el chulo centrado en el interior blanco de la casilla (24 bpp, filas de abajo hacia arriba)."""
+    """Dibuja una X centrada en el interior blanco de la casilla (24 bpp, filas de abajo hacia arriba)."""
     b = bytearray(bits)
     px = lambda x, y: bytes(b[y * stride + 3 * x:y * stride + 3 * x + 3])
     dark = [(x, y) for y in range(h) for x in range(w) if px(x, y) == b"\x69\x69\x69"]
@@ -161,6 +161,8 @@ def main():
     writes = {}                     # (r, c) -> (texto, xf o None)
     for ref, val in TEXT.items():
         writes[parse_ref(ref)] = (val, None)
+    for ref, xf in CHECK_X_CELLS.items():
+        writes[parse_ref(ref)] = ("X", xf)
     lines = textwrap.wrap(DESC, DESC_WIDTH)
     assert len(lines) <= DESC_ROWS, "descripción de %d renglones" % len(lines)
     for i, ln in enumerate(lines):
@@ -168,9 +170,13 @@ def main():
     writes[parse_ref("AL55")] = ("X", XF_DAY_X)    # día jueves: X en la casilla JU
 
     cells, merges, rows = sm.cells([r for r in sheet], strs)
+    insertable = {parse_ref(ref) for ref in CHECK_X_CELLS}
     for (r, cc), (val, xf) in writes.items():
         k = cells.get((r, cc))
-        assert k is not None, sm.ref(r, cc)
+        if k is None:
+            assert (r, cc) in insertable, "celda inexistente: " + sm.ref(r, cc)
+            assert xf is not None, "la celda nueva necesita formato: " + sm.ref(r, cc)
+            continue
         m = sm.merge_of(merges, r, cc)
         assert m is None or (m[0], m[2]) == (r, cc), "no es la celda superior izquierda: " + sm.ref(r, cc)
 
@@ -236,6 +242,21 @@ def main():
                 done.add((r, cc))
                 continue
         new_sheet.append((t, d))
+    missing = set(writes) - done
+    cell_records = {0x0006, 0x00FD, 0x0201, 0x00BE, 0x0203, 0x027E, 0x00BD, 0x0204, 0x0205}
+    for r, cc in sorted(missing):
+        val, nxf = writes[(r, cc)]
+        assert nxf is not None, "la celda nueva necesita formato: " + sm.ref(r, cc)
+        insert_at = None
+        for j, (t, d) in enumerate(new_sheet):
+            if t in cell_records:
+                rr, c1 = struct.unpack_from("<HH", d)
+                if (rr, c1) > (r, cc):
+                    insert_at = j
+                    break
+        assert insert_at is not None, "sin posición para insertar " + sm.ref(r, cc)
+        new_sheet.insert(insert_at, (0x00FD, struct.pack("<HHHI", r, cc, nxf, isst_of[(r, cc)])))
+        done.add((r, cc))
     missing = set(writes) - done
     assert not missing, [sm.ref(*k) for k in missing]
 

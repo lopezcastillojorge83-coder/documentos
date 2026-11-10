@@ -1,6 +1,6 @@
 import sys, struct, re
 import cfb, sheetmodel as sm, xlsfix, blips, drawing as dr
-from targets import TEXT, CHECK
+from targets import TEXT, CHECK, CHECK_X_CELLS
 A = cfb.CFB(open(sys.argv[1], 'rb').read()); B = cfb.CFB(open(sys.argv[2], 'rb').read())
 pa = A.path(None); pb = B.path(None)
 assert sorted(pa.values()) == sorted(pb.values())
@@ -63,10 +63,14 @@ def pr(ref):
     for ch in m.group(1): c = c * 26 + ord(ch) - 64
     return int(m.group(2)) - 1, c - 1
 bad = [r for r, v in TEXT.items() if cells.get(pr(r), (0, 0, None))[2] != v]
-print('celdas con valor distinto al esperado:', bad)
+bad_x = [r for r in CHECK_X_CELLS if cells.get(pr(r), (0, 0, None))[2] != 'X']
+print('campos con valor distinto al esperado:', bad)
+print('casillas sin X literal:', bad_x)
+assert not bad and not bad_x
 cellsA, _, _ = sm.cells(sa[1], stra)
 changed = [sm.ref(*k) for k in cellsA if cellsA[k] != cells.get(k)]
 print('celdas cambiadas:', len(changed))
 ctl = B.read('/Ctls'); ctlA = A.read('/Ctls')
 diff = [i for i in range(len(ctl)) if ctl[i] != ctlA[i]]
 print('bytes cambiados en Ctls:', len(diff), 'casillas esperadas:', len(CHECK))
+assert len(diff) == len(CHECK)
