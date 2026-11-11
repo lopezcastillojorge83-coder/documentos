@@ -1,0 +1,243 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1140" viewBox="0 0 1600 1140" font-family="Noto Sans, DejaVu Sans, Arial, sans-serif">
+<rect width="1600" height="1140" fill="#f3efe6"/>
+<text x="40.0" y="62.0" font-size="34" fill="#263238" font-weight="700" text-anchor="start">Comparación de las opciones de cercha</text>
+<text x="40.0" y="96.0" font-size="18" fill="#5f6b73" font-weight="400" text-anchor="start">Balso · base 40 cm · alto 20 cm · cuerda inferior de una sola barra · misma sección en todas las barras · b = 10 cm</text>
+<rect x="40.0" y="130.0" width="490.0" height="810.0" rx="14" fill="#ffffff" stroke="#e2d9c6" stroke-width="1.5" opacity="1.0"/>
+<text x="64.0" y="170.0" font-size="16" fill="#5f6b73" font-weight="700" text-anchor="start">Opción 1</text>
+<text x="64.0" y="202.0" font-size="25" fill="#263238" font-weight="700" text-anchor="start">Warren en W</text>
+<rect x="374.0" y="152.0" width="132.0" height="44.0" rx="22" fill="#2e7d32" stroke="none" stroke-width="1.0" opacity="1.0"/>
+<text x="440.0" y="182.0" font-size="19" fill="#ffffff" font-weight="700" text-anchor="middle">41 barras</text>
+<line x1="235.0" y1="470.0" x2="285.0" y2="270.0" stroke="#ffd54f" stroke-width="18.0" stroke-linecap="round" opacity="0.95"/>
+<line x1="285.0" y1="270.0" x2="335.0" y2="470.0" stroke="#ffd54f" stroke-width="18.0" stroke-linecap="round" opacity="0.95"/>
+<line x1="85.0" y1="470.0" x2="235.0" y2="470.0" stroke="#1565c0" stroke-width="3.6" stroke-linecap="round" opacity="1.0"/>
+<line x1="235.0" y1="470.0" x2="335.0" y2="470.0" stroke="#1565c0" stroke-width="4.7" stroke-linecap="round" opacity="1.0"/>
+<line x1="335.0" y1="470.0" x2="485.0" y2="470.0" stroke="#1565c0" stroke-width="3.6" stroke-linecap="round" opacity="1.0"/>
+<line x1="135.0" y1="270.0" x2="285.0" y2="270.0" stroke="#c62828" stroke-width="4.3" stroke-linecap="round" opacity="1.0"/>
+<line x1="285.0" y1="270.0" x2="435.0" y2="270.0" stroke="#c62828" stroke-width="4.3" stroke-linecap="round" opacity="1.0"/>
+<line x1="135.0" y1="270.0" x2="235.0" y2="470.0" stroke="#1565c0" stroke-width="4.1" stroke-linecap="round" opacity="1.0"/>
+<line x1="235.0" y1="470.0" x2="285.0" y2="270.0" stroke="#c62828" stroke-width="4.0" stroke-linecap="round" opacity="1.0"/>
+<line x1="285.0" y1="270.0" x2="335.0" y2="470.0" stroke="#c62828" stroke-width="4.0" stroke-linecap="round" opacity="1.0"/>
+<line x1="335.0" y1="470.0" x2="435.0" y2="270.0" stroke="#1565c0" stroke-width="4.1" stroke-linecap="round" opacity="1.0"/>
+<line x1="85.0" y1="470.0" x2="110.0" y2="370.0" stroke="#c62828" stroke-width="7.0" stroke-linecap="round" opacity="1.0"/>
+<line x1="110.0" y1="370.0" x2="135.0" y2="270.0" stroke="#c62828" stroke-width="7.0" stroke-linecap="round" opacity="1.0"/>
+<line x1="485.0" y1="470.0" x2="460.0" y2="370.0" stroke="#c62828" stroke-width="7.0" stroke-linecap="round" opacity="1.0"/>
+<line x1="460.0" y1="370.0" x2="435.0" y2="270.0" stroke="#c62828" stroke-width="7.0" stroke-linecap="round" opacity="1.0"/>
+<line x1="110.0" y1="370.0" x2="235.0" y2="470.0" stroke="#9e9e9e" stroke-width="2.5" stroke-linecap="round" opacity="1.0" stroke-dasharray="7 6"/>
+<line x1="460.0" y1="370.0" x2="335.0" y2="470.0" stroke="#9e9e9e" stroke-width="2.5" stroke-linecap="round" opacity="1.0" stroke-dasharray="7 6"/>
+<line x1="135.0" y1="228.0" x2="135.0" y2="253.0" stroke="#263238" stroke-width="2.0" stroke-linecap="butt" opacity="1.0"/>
+<polygon points="135.0,262.0 130.5,253.0 139.5,253.0" fill="#263238" stroke="none" stroke-width="1.0" opacity="1.0" stroke-linejoin="round"/>
+<line x1="285.0" y1="228.0" x2="285.0" y2="253.0" stroke="#263238" stroke-width="2.0" stroke-linecap="butt" opacity="1.0"/>
+<polygon points="285.0,262.0 280.5,253.0 289.5,253.0" fill="#263238" stroke="none" stroke-width="1.0" opacity="1.0" stroke-linejoin="round"/>
+<line x1="435.0" y1="228.0" x2="435.0" y2="253.0" stroke="#263238" stroke-width="2.0" stroke-linecap="butt" opacity="1.0"/>
+<polygon points="435.0,262.0 430.5,253.0 439.5,253.0" fill="#263238" stroke="none" stroke-width="1.0" opacity="1.0" stroke-linejoin="round"/>
+<polygon points="85.0,476.0 75.0,491.0 95.0,491.0" fill="#eceff1" stroke="#263238" stroke-width="1.8" opacity="1.0" stroke-linejoin="round"/>
+<line x1="69.0" y1="492.0" x2="101.0" y2="492.0" stroke="#263238" stroke-width="1.8" stroke-linecap="round" opacity="1.0"/>
+<polygon points="485.0,476.0 475.0,491.0 495.0,491.0" fill="#eceff1" stroke="#263238" stroke-width="1.8" opacity="1.0" stroke-linejoin="round"/>
+<circle cx="480.0" cy="495.0" r="3" fill="#ffffff" stroke="#263238" stroke-width="1.5"/>
+<circle cx="490.0" cy="495.0" r="3" fill="#ffffff" stroke="#263238" stroke-width="1.5"/>
+<line x1="469.0" y1="500.0" x2="501.0" y2="500.0" stroke="#263238" stroke-width="1.8" stroke-linecap="round" opacity="1.0"/>
+<circle cx="85.0" cy="470.0" r="4" fill="#ffffff" stroke="#263238" stroke-width="2"/>
+<circle cx="235.0" cy="470.0" r="4" fill="#ffffff" stroke="#263238" stroke-width="2"/>
+<circle cx="335.0" cy="470.0" r="4" fill="#ffffff" stroke="#263238" stroke-width="2"/>
+<circle cx="485.0" cy="470.0" r="4" fill="#ffffff" stroke="#263238" stroke-width="2"/>
+<circle cx="135.0" cy="270.0" r="4" fill="#ffffff" stroke="#263238" stroke-width="2"/>
+<circle cx="285.0" cy="270.0" r="4" fill="#ffffff" stroke="#263238" stroke-width="2"/>
+<circle cx="435.0" cy="270.0" r="4" fill="#ffffff" stroke="#263238" stroke-width="2"/>
+<circle cx="110.0" cy="370.0" r="4" fill="#ffffff" stroke="#263238" stroke-width="2"/>
+<circle cx="460.0" cy="370.0" r="4" fill="#ffffff" stroke="#263238" stroke-width="2"/>
+<text x="71.0" y="488.0" font-size="12" fill="#263238" font-weight="700" text-anchor="end">A</text>
+<text x="235.0" y="488.0" font-size="12" fill="#263238" font-weight="700" text-anchor="middle">B</text>
+<text x="335.0" y="488.0" font-size="12" fill="#263238" font-weight="700" text-anchor="middle">C</text>
+<text x="499.0" y="488.0" font-size="12" fill="#263238" font-weight="700" text-anchor="start">D</text>
+<text x="125.0" y="261.0" font-size="12" fill="#263238" font-weight="700" text-anchor="end">E</text>
+<text x="275.0" y="261.0" font-size="12" fill="#263238" font-weight="700" text-anchor="end">F</text>
+<text x="425.0" y="261.0" font-size="12" fill="#263238" font-weight="700" text-anchor="end">G</text>
+<text x="98.0" y="375.0" font-size="12" fill="#263238" font-weight="700" text-anchor="end">M</text>
+<text x="472.0" y="375.0" font-size="12" fill="#263238" font-weight="700" text-anchor="start">N</text>
+<rect x="232.4" y="359.5" width="55.2" height="21.0" rx="10.5" fill="#ffffff" stroke="#c62828" stroke-width="1.6" opacity="1.0"/>
+<text x="260.0" y="374.3" font-size="12" fill="#c62828" font-weight="700" text-anchor="middle">−0.17P</text>
+<text x="285.0" y="510.0" font-size="13" fill="#1565c0" font-weight="700" text-anchor="middle">Cuerda inferior: una sola barra</text>
+<text x="64.0" y="560.0" font-size="14" fill="#5f6b73" font-weight="700" text-anchor="start">Barra crítica</text>
+<text x="64.0" y="588.0" font-size="22" fill="#263238" font-weight="700" text-anchor="start">B–F y F–C</text>
+<text x="64.0" y="622.0" font-size="14" fill="#5f6b73" font-weight="700" text-anchor="start">Fuerza y largo</text>
+<text x="64.0" y="650.0" font-size="22" fill="#c62828" font-weight="700" text-anchor="start">−0.17P  ·  20.6 cm</text>
+<text x="64.0" y="684.0" font-size="14" fill="#5f6b73" font-weight="700" text-anchor="start">Resistencia al pandeo (relativa a la opción 2)</text>
+<rect x="64.0" y="698.0" width="330.0" height="26.0" rx="13" fill="#eceff1" stroke="none" stroke-width="1.0" opacity="1.0"/>
+<rect x="64.0" y="698.0" width="330.0" height="26.0" rx="13" fill="#2e7d32" stroke="none" stroke-width="1.0" opacity="1.0"/>
+<text x="408.0" y="718.0" font-size="22" fill="#2e7d32" font-weight="700" text-anchor="start">1.8×</text>
+<text x="64.0" y="760.0" font-size="14" fill="#5f6b73" font-weight="700" text-anchor="start">Si el cabezal solo toca el centro</text>
+<text x="64.0" y="786.0" font-size="18" fill="#263238" font-weight="700" text-anchor="start">B–F y F–C: −0.52P</text>
+<circle cx="74.0" cy="824.0" r="11" fill="#2e7d32" stroke="none" stroke-width="1.0"/>
+<text x="74.0" y="829.5" font-size="18" fill="#ffffff" font-weight="700" text-anchor="middle">+</text>
+<text x="94.0" y="830.0" font-size="16" fill="#263238" font-weight="400" text-anchor="start">La más resistente y con menos barras.</text>
+<circle cx="74.0" cy="860.0" r="11" fill="#c62828" stroke="none" stroke-width="1.0"/>
+<text x="74.0" y="865.5" font-size="18" fill="#ffffff" font-weight="700" text-anchor="middle">−</text>
+<text x="94.0" y="866.0" font-size="16" fill="#263238" font-weight="400" text-anchor="start">Paneles de arriba de 15 cm: se doblan más</text>
+<text x="94.0" y="888.0" font-size="16" fill="#263238" font-weight="400" text-anchor="start">si el cabezal apoya entre nodos.</text>
+<rect x="555.0" y="130.0" width="490.0" height="810.0" rx="14" fill="#ffffff" stroke="#e2d9c6" stroke-width="1.5" opacity="1.0"/>
+<text x="579.0" y="170.0" font-size="16" fill="#5f6b73" font-weight="700" text-anchor="start">Opción 2</text>
+<text x="579.0" y="202.0" font-size="25" fill="#263238" font-weight="700" text-anchor="start">Pratt arriostrada</text>
+<rect x="889.0" y="152.0" width="132.0" height="44.0" rx="22" fill="#2e7d32" stroke="none" stroke-width="1.0" opacity="1.0"/>
+<text x="955.0" y="182.0" font-size="19" fill="#ffffff" font-weight="700" text-anchor="middle">44 barras</text>
+<line x1="800.0" y1="470.0" x2="800.0" y2="270.0" stroke="#ffd54f" stroke-width="18.0" stroke-linecap="round" opacity="0.95"/>
+<line x1="600.0" y1="470.0" x2="700.0" y2="470.0" stroke="#1565c0" stroke-width="4.5" stroke-linecap="round" opacity="1.0"/>
+<line x1="700.0" y1="470.0" x2="800.0" y2="470.0" stroke="#1565c0" stroke-width="4.5" stroke-linecap="round" opacity="1.0"/>
+<line x1="800.0" y1="470.0" x2="900.0" y2="470.0" stroke="#1565c0" stroke-width="4.5" stroke-linecap="round" opacity="1.0"/>
+<line x1="900.0" y1="470.0" x2="1000.0" y2="470.0" stroke="#1565c0" stroke-width="4.5" stroke-linecap="round" opacity="1.0"/>
+<line x1="700.0" y1="270.0" x2="800.0" y2="270.0" stroke="#c62828" stroke-width="5.2" stroke-linecap="round" opacity="1.0"/>
+<line x1="800.0" y1="270.0" x2="900.0" y2="270.0" stroke="#c62828" stroke-width="5.2" stroke-linecap="round" opacity="1.0"/>
+<line x1="700.0" y1="470.0" x2="700.0" y2="270.0" stroke="#9e9e9e" stroke-width="2.5" stroke-linecap="round" opacity="1.0" stroke-dasharray="7 6"/>
+<line x1="800.0" y1="470.0" x2="800.0" y2="270.0" stroke="#c62828" stroke-width="5.2" stroke-linecap="round" opacity="1.0"/>
+<line x1="900.0" y1="470.0" x2="900.0" y2="270.0" stroke="#9e9e9e" stroke-width="2.5" stroke-linecap="round" opacity="1.0" stroke-dasharray="7 6"/>
+<line x1="700.0" y1="270.0" x2="800.0" y2="470.0" stroke="#1565c0" stroke-width="4.0" stroke-linecap="round" opacity="1.0"/>
+<line x1="900.0" y1="270.0" x2="800.0" y2="470.0" stroke="#1565c0" stroke-width="4.0" stroke-linecap="round" opacity="1.0"/>
+<line x1="600.0" y1="470.0" x2="650.0" y2="370.0" stroke="#c62828" stroke-width="7.0" stroke-linecap="round" opacity="1.0"/>
+<line x1="650.0" y1="370.0" x2="700.0" y2="270.0" stroke="#c62828" stroke-width="7.0" stroke-linecap="round" opacity="1.0"/>
+<line x1="1000.0" y1="470.0" x2="950.0" y2="370.0" stroke="#c62828" stroke-width="7.0" stroke-linecap="round" opacity="1.0"/>
+<line x1="950.0" y1="370.0" x2="900.0" y2="270.0" stroke="#c62828" stroke-width="7.0" stroke-linecap="round" opacity="1.0"/>
+<line x1="650.0" y1="370.0" x2="700.0" y2="470.0" stroke="#9e9e9e" stroke-width="2.5" stroke-linecap="round" opacity="1.0" stroke-dasharray="7 6"/>
+<line x1="950.0" y1="370.0" x2="900.0" y2="470.0" stroke="#9e9e9e" stroke-width="2.5" stroke-linecap="round" opacity="1.0" stroke-dasharray="7 6"/>
+<line x1="700.0" y1="228.0" x2="700.0" y2="253.0" stroke="#263238" stroke-width="2.0" stroke-linecap="butt" opacity="1.0"/>
+<polygon points="700.0,262.0 695.5,253.0 704.5,253.0" fill="#263238" stroke="none" stroke-width="1.0" opacity="1.0" stroke-linejoin="round"/>
+<line x1="800.0" y1="228.0" x2="800.0" y2="253.0" stroke="#263238" stroke-width="2.0" stroke-linecap="butt" opacity="1.0"/>
+<polygon points="800.0,262.0 795.5,253.0 804.5,253.0" fill="#263238" stroke="none" stroke-width="1.0" opacity="1.0" stroke-linejoin="round"/>
+<line x1="900.0" y1="228.0" x2="900.0" y2="253.0" stroke="#263238" stroke-width="2.0" stroke-linecap="butt" opacity="1.0"/>
+<polygon points="900.0,262.0 895.5,253.0 904.5,253.0" fill="#263238" stroke="none" stroke-width="1.0" opacity="1.0" stroke-linejoin="round"/>
+<polygon points="600.0,476.0 590.0,491.0 610.0,491.0" fill="#eceff1" stroke="#263238" stroke-width="1.8" opacity="1.0" stroke-linejoin="round"/>
+<line x1="584.0" y1="492.0" x2="616.0" y2="492.0" stroke="#263238" stroke-width="1.8" stroke-linecap="round" opacity="1.0"/>
+<polygon points="1000.0,476.0 990.0,491.0 1010.0,491.0" fill="#eceff1" stroke="#263238" stroke-width="1.8" opacity="1.0" stroke-linejoin="round"/>
+<circle cx="995.0" cy="495.0" r="3" fill="#ffffff" stroke="#263238" stroke-width="1.5"/>
+<circle cx="1005.0" cy="495.0" r="3" fill="#ffffff" stroke="#263238" stroke-width="1.5"/>
+<line x1="984.0" y1="500.0" x2="1016.0" y2="500.0" stroke="#263238" stroke-width="1.8" stroke-linecap="round" opacity="1.0"/>
+<circle cx="600.0" cy="470.0" r="4" fill="#ffffff" stroke="#263238" stroke-width="2"/>
+<circle cx="700.0" cy="470.0" r="4" fill="#ffffff" stroke="#263238" stroke-width="2"/>
+<circle cx="800.0" cy="470.0" r="4" fill="#ffffff" stroke="#263238" stroke-width="2"/>
+<circle cx="900.0" cy="470.0" r="4" fill="#ffffff" stroke="#263238" stroke-width="2"/>
+<circle cx="1000.0" cy="470.0" r="4" fill="#ffffff" stroke="#263238" stroke-width="2"/>
+<circle cx="700.0" cy="270.0" r="4" fill="#ffffff" stroke="#263238" stroke-width="2"/>
+<circle cx="800.0" cy="270.0" r="4" fill="#ffffff" stroke="#263238" stroke-width="2"/>
+<circle cx="900.0" cy="270.0" r="4" fill="#ffffff" stroke="#263238" stroke-width="2"/>
+<circle cx="650.0" cy="370.0" r="4" fill="#ffffff" stroke="#263238" stroke-width="2"/>
+<circle cx="950.0" cy="370.0" r="4" fill="#ffffff" stroke="#263238" stroke-width="2"/>
+<text x="586.0" y="488.0" font-size="12" fill="#263238" font-weight="700" text-anchor="end">A</text>
+<text x="700.0" y="488.0" font-size="12" fill="#263238" font-weight="700" text-anchor="middle">B</text>
+<text x="800.0" y="488.0" font-size="12" fill="#263238" font-weight="700" text-anchor="middle">C</text>
+<text x="900.0" y="488.0" font-size="12" fill="#263238" font-weight="700" text-anchor="middle">D</text>
+<text x="1014.0" y="488.0" font-size="12" fill="#263238" font-weight="700" text-anchor="start">E</text>
+<text x="690.0" y="261.0" font-size="12" fill="#263238" font-weight="700" text-anchor="end">F</text>
+<text x="790.0" y="261.0" font-size="12" fill="#263238" font-weight="700" text-anchor="end">G</text>
+<text x="890.0" y="261.0" font-size="12" fill="#263238" font-weight="700" text-anchor="end">H</text>
+<text x="638.0" y="375.0" font-size="12" fill="#263238" font-weight="700" text-anchor="end">M</text>
+<text x="962.0" y="375.0" font-size="12" fill="#263238" font-weight="700" text-anchor="start">N</text>
+<rect x="772.4" y="359.5" width="55.2" height="21.0" rx="10.5" fill="#ffffff" stroke="#c62828" stroke-width="1.6" opacity="1.0"/>
+<text x="800.0" y="374.3" font-size="12" fill="#c62828" font-weight="700" text-anchor="middle">−0.33P</text>
+<text x="800.0" y="510.0" font-size="13" fill="#1565c0" font-weight="700" text-anchor="middle">Cuerda inferior: una sola barra</text>
+<text x="579.0" y="560.0" font-size="14" fill="#5f6b73" font-weight="700" text-anchor="start">Barra crítica</text>
+<text x="579.0" y="588.0" font-size="22" fill="#263238" font-weight="700" text-anchor="start">C–G</text>
+<text x="579.0" y="622.0" font-size="14" fill="#5f6b73" font-weight="700" text-anchor="start">Fuerza y largo</text>
+<text x="579.0" y="650.0" font-size="22" fill="#c62828" font-weight="700" text-anchor="start">−0.33P  ·  20.0 cm</text>
+<text x="579.0" y="684.0" font-size="14" fill="#5f6b73" font-weight="700" text-anchor="start">Resistencia al pandeo (relativa a la opción 2)</text>
+<rect x="579.0" y="698.0" width="330.0" height="26.0" rx="13" fill="#eceff1" stroke="none" stroke-width="1.0" opacity="1.0"/>
+<rect x="579.0" y="698.0" width="180.7" height="26.0" rx="13" fill="#2e7d32" stroke="none" stroke-width="1.0" opacity="1.0"/>
+<text x="923.0" y="718.0" font-size="22" fill="#2e7d32" font-weight="700" text-anchor="start">1.0×</text>
+<text x="579.0" y="760.0" font-size="14" fill="#5f6b73" font-weight="700" text-anchor="start">Si el cabezal solo toca el centro</text>
+<text x="579.0" y="786.0" font-size="18" fill="#263238" font-weight="700" text-anchor="start">C–G: −1.00P</text>
+<circle cx="589.0" cy="824.0" r="11" fill="#2e7d32" stroke="none" stroke-width="1.0"/>
+<text x="589.0" y="829.5" font-size="18" fill="#ffffff" font-weight="700" text-anchor="middle">+</text>
+<text x="609.0" y="830.0" font-size="16" fill="#263238" font-weight="400" text-anchor="start">Las diagonales largas trabajan a tensión.</text>
+<circle cx="589.0" cy="860.0" r="11" fill="#c62828" stroke="none" stroke-width="1.0"/>
+<text x="589.0" y="865.5" font-size="18" fill="#ffffff" font-weight="700" text-anchor="middle">−</text>
+<text x="609.0" y="866.0" font-size="16" fill="#263238" font-weight="400" text-anchor="start">Todo el centro descansa en un solo</text>
+<text x="609.0" y="888.0" font-size="16" fill="#263238" font-weight="400" text-anchor="start">montante, C–G.</text>
+<rect x="1070.0" y="130.0" width="490.0" height="810.0" rx="14" fill="#ffffff" stroke="#e2d9c6" stroke-width="1.5" opacity="1.0"/>
+<text x="1094.0" y="170.0" font-size="16" fill="#5f6b73" font-weight="700" text-anchor="start">Opción 3</text>
+<text x="1094.0" y="202.0" font-size="25" fill="#263238" font-weight="700" text-anchor="start">Warren de 4 nodos</text>
+<rect x="1404.0" y="152.0" width="132.0" height="44.0" rx="22" fill="#2e7d32" stroke="none" stroke-width="1.0" opacity="1.0"/>
+<text x="1470.0" y="182.0" font-size="19" fill="#ffffff" font-weight="700" text-anchor="middle">50 barras</text>
+<line x1="1215.0" y1="470.0" x2="1265.0" y2="270.0" stroke="#ffd54f" stroke-width="18.0" stroke-linecap="round" opacity="0.95"/>
+<line x1="1365.0" y1="270.0" x2="1415.0" y2="470.0" stroke="#ffd54f" stroke-width="18.0" stroke-linecap="round" opacity="0.95"/>
+<line x1="1115.0" y1="470.0" x2="1215.0" y2="470.0" stroke="#1565c0" stroke-width="3.6" stroke-linecap="round" opacity="1.0"/>
+<line x1="1215.0" y1="470.0" x2="1315.0" y2="470.0" stroke="#1565c0" stroke-width="4.7" stroke-linecap="round" opacity="1.0"/>
+<line x1="1315.0" y1="470.0" x2="1415.0" y2="470.0" stroke="#1565c0" stroke-width="4.7" stroke-linecap="round" opacity="1.0"/>
+<line x1="1415.0" y1="470.0" x2="1515.0" y2="470.0" stroke="#1565c0" stroke-width="3.6" stroke-linecap="round" opacity="1.0"/>
+<line x1="1165.0" y1="270.0" x2="1265.0" y2="270.0" stroke="#c62828" stroke-width="4.1" stroke-linecap="round" opacity="1.0"/>
+<line x1="1265.0" y1="270.0" x2="1365.0" y2="270.0" stroke="#c62828" stroke-width="4.7" stroke-linecap="round" opacity="1.0"/>
+<line x1="1365.0" y1="270.0" x2="1465.0" y2="270.0" stroke="#c62828" stroke-width="4.1" stroke-linecap="round" opacity="1.0"/>
+<line x1="1165.0" y1="270.0" x2="1215.0" y2="470.0" stroke="#1565c0" stroke-width="4.8" stroke-linecap="round" opacity="1.0"/>
+<line x1="1215.0" y1="470.0" x2="1265.0" y2="270.0" stroke="#c62828" stroke-width="4.8" stroke-linecap="round" opacity="1.0"/>
+<line x1="1265.0" y1="270.0" x2="1315.0" y2="470.0" stroke="#9e9e9e" stroke-width="2.5" stroke-linecap="round" opacity="1.0" stroke-dasharray="7 6"/>
+<line x1="1315.0" y1="470.0" x2="1365.0" y2="270.0" stroke="#9e9e9e" stroke-width="2.5" stroke-linecap="round" opacity="1.0" stroke-dasharray="7 6"/>
+<line x1="1365.0" y1="270.0" x2="1415.0" y2="470.0" stroke="#c62828" stroke-width="4.8" stroke-linecap="round" opacity="1.0"/>
+<line x1="1415.0" y1="470.0" x2="1465.0" y2="270.0" stroke="#1565c0" stroke-width="4.8" stroke-linecap="round" opacity="1.0"/>
+<line x1="1115.0" y1="470.0" x2="1140.0" y2="370.0" stroke="#c62828" stroke-width="7.0" stroke-linecap="round" opacity="1.0"/>
+<line x1="1140.0" y1="370.0" x2="1165.0" y2="270.0" stroke="#c62828" stroke-width="7.0" stroke-linecap="round" opacity="1.0"/>
+<line x1="1515.0" y1="470.0" x2="1490.0" y2="370.0" stroke="#c62828" stroke-width="7.0" stroke-linecap="round" opacity="1.0"/>
+<line x1="1490.0" y1="370.0" x2="1465.0" y2="270.0" stroke="#c62828" stroke-width="7.0" stroke-linecap="round" opacity="1.0"/>
+<line x1="1140.0" y1="370.0" x2="1215.0" y2="470.0" stroke="#9e9e9e" stroke-width="2.5" stroke-linecap="round" opacity="1.0" stroke-dasharray="7 6"/>
+<line x1="1490.0" y1="370.0" x2="1415.0" y2="470.0" stroke="#9e9e9e" stroke-width="2.5" stroke-linecap="round" opacity="1.0" stroke-dasharray="7 6"/>
+<line x1="1165.0" y1="228.0" x2="1165.0" y2="253.0" stroke="#263238" stroke-width="2.0" stroke-linecap="butt" opacity="1.0"/>
+<polygon points="1165.0,262.0 1160.5,253.0 1169.5,253.0" fill="#263238" stroke="none" stroke-width="1.0" opacity="1.0" stroke-linejoin="round"/>
+<line x1="1265.0" y1="228.0" x2="1265.0" y2="253.0" stroke="#263238" stroke-width="2.0" stroke-linecap="butt" opacity="1.0"/>
+<polygon points="1265.0,262.0 1260.5,253.0 1269.5,253.0" fill="#263238" stroke="none" stroke-width="1.0" opacity="1.0" stroke-linejoin="round"/>
+<line x1="1365.0" y1="228.0" x2="1365.0" y2="253.0" stroke="#263238" stroke-width="2.0" stroke-linecap="butt" opacity="1.0"/>
+<polygon points="1365.0,262.0 1360.5,253.0 1369.5,253.0" fill="#263238" stroke="none" stroke-width="1.0" opacity="1.0" stroke-linejoin="round"/>
+<line x1="1465.0" y1="228.0" x2="1465.0" y2="253.0" stroke="#263238" stroke-width="2.0" stroke-linecap="butt" opacity="1.0"/>
+<polygon points="1465.0,262.0 1460.5,253.0 1469.5,253.0" fill="#263238" stroke="none" stroke-width="1.0" opacity="1.0" stroke-linejoin="round"/>
+<polygon points="1115.0,476.0 1105.0,491.0 1125.0,491.0" fill="#eceff1" stroke="#263238" stroke-width="1.8" opacity="1.0" stroke-linejoin="round"/>
+<line x1="1099.0" y1="492.0" x2="1131.0" y2="492.0" stroke="#263238" stroke-width="1.8" stroke-linecap="round" opacity="1.0"/>
+<polygon points="1515.0,476.0 1505.0,491.0 1525.0,491.0" fill="#eceff1" stroke="#263238" stroke-width="1.8" opacity="1.0" stroke-linejoin="round"/>
+<circle cx="1510.0" cy="495.0" r="3" fill="#ffffff" stroke="#263238" stroke-width="1.5"/>
+<circle cx="1520.0" cy="495.0" r="3" fill="#ffffff" stroke="#263238" stroke-width="1.5"/>
+<line x1="1499.0" y1="500.0" x2="1531.0" y2="500.0" stroke="#263238" stroke-width="1.8" stroke-linecap="round" opacity="1.0"/>
+<circle cx="1115.0" cy="470.0" r="4" fill="#ffffff" stroke="#263238" stroke-width="2"/>
+<circle cx="1215.0" cy="470.0" r="4" fill="#ffffff" stroke="#263238" stroke-width="2"/>
+<circle cx="1315.0" cy="470.0" r="4" fill="#ffffff" stroke="#263238" stroke-width="2"/>
+<circle cx="1415.0" cy="470.0" r="4" fill="#ffffff" stroke="#263238" stroke-width="2"/>
+<circle cx="1515.0" cy="470.0" r="4" fill="#ffffff" stroke="#263238" stroke-width="2"/>
+<circle cx="1165.0" cy="270.0" r="4" fill="#ffffff" stroke="#263238" stroke-width="2"/>
+<circle cx="1265.0" cy="270.0" r="4" fill="#ffffff" stroke="#263238" stroke-width="2"/>
+<circle cx="1365.0" cy="270.0" r="4" fill="#ffffff" stroke="#263238" stroke-width="2"/>
+<circle cx="1465.0" cy="270.0" r="4" fill="#ffffff" stroke="#263238" stroke-width="2"/>
+<circle cx="1140.0" cy="370.0" r="4" fill="#ffffff" stroke="#263238" stroke-width="2"/>
+<circle cx="1490.0" cy="370.0" r="4" fill="#ffffff" stroke="#263238" stroke-width="2"/>
+<text x="1101.0" y="488.0" font-size="12" fill="#263238" font-weight="700" text-anchor="end">A</text>
+<text x="1215.0" y="488.0" font-size="12" fill="#263238" font-weight="700" text-anchor="middle">B</text>
+<text x="1315.0" y="488.0" font-size="12" fill="#263238" font-weight="700" text-anchor="middle">C</text>
+<text x="1415.0" y="488.0" font-size="12" fill="#263238" font-weight="700" text-anchor="middle">D</text>
+<text x="1529.0" y="488.0" font-size="12" fill="#263238" font-weight="700" text-anchor="start">E</text>
+<text x="1155.0" y="261.0" font-size="12" fill="#263238" font-weight="700" text-anchor="end">F</text>
+<text x="1255.0" y="261.0" font-size="12" fill="#263238" font-weight="700" text-anchor="end">G</text>
+<text x="1355.0" y="261.0" font-size="12" fill="#263238" font-weight="700" text-anchor="end">H</text>
+<text x="1455.0" y="261.0" font-size="12" fill="#263238" font-weight="700" text-anchor="end">I</text>
+<text x="1128.0" y="375.0" font-size="12" fill="#263238" font-weight="700" text-anchor="end">M</text>
+<text x="1502.0" y="375.0" font-size="12" fill="#263238" font-weight="700" text-anchor="start">N</text>
+<rect x="1212.4" y="359.5" width="55.2" height="21.0" rx="10.5" fill="#ffffff" stroke="#c62828" stroke-width="1.6" opacity="1.0"/>
+<text x="1240.0" y="374.3" font-size="12" fill="#c62828" font-weight="700" text-anchor="middle">−0.26P</text>
+<rect x="1362.4" y="359.5" width="55.2" height="21.0" rx="10.5" fill="#ffffff" stroke="#c62828" stroke-width="1.6" opacity="1.0"/>
+<text x="1390.0" y="374.3" font-size="12" fill="#c62828" font-weight="700" text-anchor="middle">−0.26P</text>
+<text x="1315.0" y="510.0" font-size="13" fill="#1565c0" font-weight="700" text-anchor="middle">Cuerda inferior: una sola barra</text>
+<text x="1094.0" y="560.0" font-size="14" fill="#5f6b73" font-weight="700" text-anchor="start">Barra crítica</text>
+<text x="1094.0" y="588.0" font-size="22" fill="#263238" font-weight="700" text-anchor="start">B–G y H–D</text>
+<text x="1094.0" y="622.0" font-size="14" fill="#5f6b73" font-weight="700" text-anchor="start">Fuerza y largo</text>
+<text x="1094.0" y="650.0" font-size="22" fill="#c62828" font-weight="700" text-anchor="start">−0.26P  ·  20.6 cm</text>
+<text x="1094.0" y="684.0" font-size="14" fill="#5f6b73" font-weight="700" text-anchor="start">Resistencia al pandeo (relativa a la opción 2)</text>
+<rect x="1094.0" y="698.0" width="330.0" height="26.0" rx="13" fill="#eceff1" stroke="none" stroke-width="1.0" opacity="1.0"/>
+<rect x="1094.0" y="698.0" width="220.0" height="26.0" rx="13" fill="#2e7d32" stroke="none" stroke-width="1.0" opacity="1.0"/>
+<text x="1438.0" y="718.0" font-size="22" fill="#2e7d32" font-weight="700" text-anchor="start">1.2×</text>
+<text x="1094.0" y="760.0" font-size="14" fill="#5f6b73" font-weight="700" text-anchor="start">Si el cabezal solo toca el centro</text>
+<text x="1094.0" y="786.0" font-size="18" fill="#263238" font-weight="700" text-anchor="start">Apoya en la mitad de una barra y la dobla</text>
+<circle cx="1104.0" cy="824.0" r="11" fill="#2e7d32" stroke="none" stroke-width="1.0"/>
+<text x="1104.0" y="829.5" font-size="18" fill="#ffffff" font-weight="700" text-anchor="middle">+</text>
+<text x="1124.0" y="830.0" font-size="16" fill="#263238" font-weight="400" text-anchor="start">Paneles de arriba más cortos (10 cm).</text>
+<circle cx="1104.0" cy="860.0" r="11" fill="#c62828" stroke="none" stroke-width="1.0"/>
+<text x="1104.0" y="865.5" font-size="18" fill="#ffffff" font-weight="700" text-anchor="middle">−</text>
+<text x="1124.0" y="866.0" font-size="16" fill="#263238" font-weight="400" text-anchor="start">Usa 50 barras y no tiene nodo arriba en el</text>
+<text x="1124.0" y="888.0" font-size="16" fill="#263238" font-weight="400" text-anchor="start">centro.</text>
+<rect x="40.0" y="960.0" width="1520.0" height="112.0" rx="14" fill="#e8f5e9" stroke="#a5d6a7" stroke-width="1.5" opacity="1.0"/>
+<rect x="40.0" y="960.0" width="10.0" height="112.0" rx="4" fill="#2e7d32" stroke="none" stroke-width="1.0" opacity="1.0"/>
+<text x="70.0" y="996.0" font-size="18" fill="#2e7d32" font-weight="700" text-anchor="start">Recomendación</text>
+<text x="70.0" y="1027.0" font-size="18" fill="#263238" font-weight="700" text-anchor="start">Opción 1: es la más resistente y la que usa menos barras (41).</text>
+<text x="70.0" y="1055.0" font-size="17" fill="#263238" font-weight="400" text-anchor="start">Las opciones 2 y 3 usan más barras y resisten menos: manda la barra comprimida más cargada y más larga, no la cantidad de barras.</text>
+<text x="40.0" y="1102.0" font-size="14" fill="#5f6b73" font-weight="400" text-anchor="start">Resistencia relativa: |F|·L² de la barra crítica de la opción 2 dividido entre el de cada opción (misma sección y mismo E en todas las barras).</text>
+<text x="40.0" y="1124.0" font-size="14" fill="#5f6b73" font-weight="400" text-anchor="start">P es la carga en una cara, repartida por igual entre los nodos de arriba. La cuerda inferior de cada cara cuenta como una sola barra.</text>
+</svg>
