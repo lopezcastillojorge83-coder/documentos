@@ -1,3 +1,49 @@
-# Predicción del movimiento del carro por contrapeso
+# Predicción del movimiento del carro
 
-La predicción se calcula con las medidas reales del prototipo: el contrapeso tiene una masa m = 40 g = 0,040 kg, el carro completo tiene una masa M = 204,3 g = 0,204 kg, las ruedas tienen un radio R = 2,5 cm, el carrete tiene un radio r = 1,025 cm, la altura de caída del contrapeso es h = 15 cm, la relación de transmisión es k = R/r = 2,44, el coeficiente de rozamiento por rodadura estimado es μr = 0,028 y la eficiencia de las dos poleas es η = 0,915. Con estos datos se calcula primero la fuerza que impulsa el carro, que es la tensión del hilo reducida por la palanca del carrete, Fd = η·m·g/k = 0,915 × 0,040 × 9,81 / 2,44 = 0,147 N, y la fuerza que lo frena, que es el rozamiento de rodadura de las cuatro ruedas, Fr = μr·(M + m)·g = 0,028 × 0,244 × 9,81 = 0,067 N. El cociente entre ambas da el margen de arranque n = Fd/Fr = 2,19, lo que significa que el carro arranca con más del doble de la fuerza que necesita, así que se mueve sin problema. El movimiento tiene dos fases. En la primera, mientras el contrapeso cae, el carro acelera de forma constante con a1 = (Fd − Fr)/Meq = (0,147 − 0,067)/0,284 = 0,282 m/s², recorre una distancia d1 = k·h = 2,44 × 0,15 = 0,366 m (36,6 cm) y al terminar la caída alcanza su velocidad máxima v1 = √(2·a1·d1) = √(2 × 0,282 × 0,366) = 0,454 m/s, todo esto en un tiempo t1 = v1/a1 = 1,61 s. El contrapeso baja mucho más lento que el carro, con ap = a1/k = 0,116 m/s², porque el carrete convierte su caída en avance del carro. En la segunda fase, cuando el contrapeso se apoya en el chasis y el hilo se suelta, el carro sigue avanzando solo por inercia y se va frenando por el rozamiento con una desaceleración a2 = 0,242 m/s², recorriendo una distancia adicional d2 = v1²/(2·a2) = 0,454²/(2 × 0,242) = 0,426 m (42,6 cm) en un tiempo t2 = 1,87 s. Sumando las dos fases, la distancia total que recorre el carro es D = d1 + d2 = 0,366 + 0,426 = 0,79 m (79 cm), lo que cumple el requisito de recorrer un metro o menos, con un tiempo total de t = t1 + t2 = 3,48 s y una velocidad media de 0,23 m/s. El balance de energía confirma el resultado: la energía que entra al sistema es la energía potencial del contrapeso, Ep = m·g·h = 58,9 mJ, de la cual aproximadamente la mitad (29,3 mJ) se convierte en energía cinética de movimiento del carro y de giro de las ruedas, mientras que el resto se pierde por el rozamiento de rodadura (24,5 mJ) y por el rozamiento de las poleas (5,0 mJ); la energía que entra es igual a la suma de la que se aprovecha más la que se pierde, de modo que el balance cierra correctamente. En conclusión, el prototipo recorre 79 cm en línea recta, alcanza una velocidad máxima de 0,45 m/s y se detiene a los 3,5 segundos, cumpliendo el requisito del movimiento del Avance 2.
+Proyecto de Física I · Avance 2 · Jorge López, Laura Baquero y David Pinilla
+
+## Datos del prototipo
+
+| Símbolo | Magnitud | Valor |
+|---|---|---|
+| m | Masa del contrapeso | 50 g = 0,050 kg |
+| M | Masa del carro | 0,204 kg |
+| R | Radio de las ruedas (CD) | 6 cm = 0,06 m |
+| r | Radio del carrete | 1 cm = 0,01 m |
+| h | Altura de caída del contrapeso | 15 cm = 0,15 m |
+| g | Gravedad | 9,81 m/s² |
+| μ | Coef. de fricción de rodadura (CD sobre piso) | 0,025 |
+
+## 1. Energía que mueve el carro
+
+El contrapeso, al caer una altura h, pierde energía potencial gravitatoria, la única energía que recibe el carro:
+
+**Ep = m · g · h = 0,050 · 9,81 · 0,15 = 0,074 J**
+
+## 2. Relación entre la rueda y el carrete
+
+El hilo se enrolla en el carrete (radio r) y las ruedas tienen radio R. Por cada vuelta del eje el carro avanza R mientras el hilo solo suelta r:
+
+**k = R / r = 0,06 / 0,01 = 6**
+
+El carro avanza 6 veces lo que baja el contrapeso. Con ruedas grandes de CD, recorre bastante distancia ya durante la caída.
+
+## 3. Distancia que recorre el carro
+
+El carro arranca y termina en reposo, así que toda la energía potencial se gasta en vencer la fricción de rodadura a lo largo del recorrido. La fricción es F = μ·(M + m)·g. Igualando la energía que entra con el trabajo de la fricción:
+
+**m · g · h = μ · (M + m) · g · D**
+
+Despejando la distancia (la g se cancela):
+
+**D = m · h / [ μ · (M + m) ] = (0,050 · 0,15) / (0,025 · 0,254) = 1,18 m**
+
+El carro recorre 1,18 m, cumpliendo el requisito de avanzar un metro o más. La velocidad máxima es de unos 0,4 m/s y el tiempo total de unos 6 s.
+
+## 4. Cómo se mueve en el tiempo
+
+Mientras el contrapeso cae sus 15 cm, el carro avanza d1 = k·h = 6·0,15 = 0,90 m y gana velocidad. Cuando el contrapeso llega al chasis, el hilo se suelta y el carro sigue por inercia unos 0,28 m más, hasta frenarse. La velocidad más alta (unos 0,4 m/s) la alcanza al final de la caída, y se detiene unos 6 s después de soltarlo.
+
+## Conclusión
+
+Con ruedas de CD de 6 cm de radio y un contrapeso de 50 g que cae 15 cm, el carro recorre 1,18 m en línea recta, cumpliendo el requisito de avanzar un metro o más. El valor de la fricción es una estimación, por eso el contrapeso es ajustable: en la prueba real se mide la distancia y, si hace falta, se le agrega o se le quita arena.
