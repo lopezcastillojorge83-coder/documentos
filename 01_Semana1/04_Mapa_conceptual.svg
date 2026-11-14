@@ -1,0 +1,279 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1340" viewBox="0 0 1800 1340" role="img" aria-labelledby="t d">
+<title id="t">Mapa conceptual de los principios físicos del carro por contrapeso</title>
+<desc id="d">Cadena de conceptos desde la energía potencial del contrapeso hasta el balance de energía, con ecuaciones y secciones de Serway y Tipler.</desc>
+<defs><linearGradient id="fondo" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#081426"/><stop offset="1" stop-color="#14304d"/></linearGradient><filter id="sombra" x="-5%" y="-5%" width="110%" height="120%"><feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#0b1b2c" flood-opacity=".12"/></filter><marker id="punta" markerWidth="10" markerHeight="10" refX="8.5" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#6b8194"/></marker></defs>
+<rect width="1800" height="1340" fill="#eef3f7"/>
+<rect width="1800" height="100" fill="url(#fondo)"/>
+<text x="40.0" y="48.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="30" font-weight="700" fill="#ffffff" text-anchor="start">MAPA CONCEPTUAL · PRINCIPIOS FÍSICOS DEL PROTOTIPO</text>
+<text x="41.0" y="78.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="15" font-weight="400" fill="#afc4d8" text-anchor="start">Carro impulsado por contrapeso · Física I · Semana 1 · Sigue las flechas en orden numérico</text>
+<circle cx="1250" cy="37" r="8" fill="#e8890c"/>
+<text x="1266.0" y="42.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="14" font-weight="600" fill="#dce7f1" text-anchor="start">Energía</text>
+<circle cx="1430" cy="37" r="8" fill="#2f6fd6"/>
+<text x="1446.0" y="42.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="14" font-weight="600" fill="#dce7f1" text-anchor="start">Leyes de Newton</text>
+<circle cx="1610" cy="37" r="8" fill="#0f9fbd"/>
+<text x="1626.0" y="42.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="14" font-weight="600" fill="#dce7f1" text-anchor="start">Rotación</text>
+<circle cx="1250" cy="69" r="8" fill="#e5484d"/>
+<text x="1266.0" y="74.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="14" font-weight="600" fill="#dce7f1" text-anchor="start">Rozamiento</text>
+<circle cx="1430" cy="69" r="8" fill="#8a6a45"/>
+<text x="1446.0" y="74.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="14" font-weight="600" fill="#dce7f1" text-anchor="start">Estructura</text>
+<circle cx="1610" cy="69" r="8" fill="#7a5bd1"/>
+<text x="1626.0" y="74.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="14" font-weight="600" fill="#dce7f1" text-anchor="start">Medición</text>
+<rect x="110" y="122" width="590" height="125" rx="16" fill="#10243b" filter="url(#sombra)"/>
+<text x="134.0" y="160.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="22" font-weight="700" fill="#ffffff" text-anchor="start">CARRO IMPULSADO POR CONTRAPESO</text>
+<text x="134.0" y="188.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="14" font-weight="400" fill="#c9d8e6" text-anchor="start">Convierte la energía potencial del contrapeso en movimiento</text>
+<text x="134.0" y="207.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="14" font-weight="400" fill="#c9d8e6" text-anchor="start">de traslación y de rotación.</text>
+<text x="134.0" y="232.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="13" font-weight="600" fill="#ffd59a" text-anchor="start">Dimensiones máx.: 30 × 18,75 × 30 cm · Contrapeso máx.: 1 kg</text>
+<line x1="270.0" y1="247.0" x2="270.0" y2="332.0" stroke="#6b8194" stroke-width="2.2" marker-end="url(#punta)"/>
+<rect x="287.0" y="280.0" width="150.0" height="22.0" rx="9" fill="#ffffff" stroke="#c9d5df"/>
+<text x="362.0" y="295.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="11" font-weight="600" fill="#45607a" text-anchor="middle" font-style="italic">obtiene su energía de la</text>
+<line x1="430.0" y1="419.0" x2="527.0" y2="419.0" stroke="#6b8194" stroke-width="2.2" marker-end="url(#punta)"/>
+<rect x="431.5" y="375.0" width="94.0" height="36.0" rx="9" fill="#ffffff" stroke="#c9d5df"/>
+<text x="478.5" y="390.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="11" font-weight="600" fill="#45607a" text-anchor="middle" font-style="italic">se libera al</text>
+<text x="478.5" y="404.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="11" font-weight="600" fill="#45607a" text-anchor="middle" font-style="italic">caer, según la</text>
+<line x1="850.0" y1="419.0" x2="947.0" y2="419.0" stroke="#6b8194" stroke-width="2.2" marker-end="url(#punta)"/>
+<rect x="851.5" y="375.0" width="94.0" height="36.0" rx="9" fill="#ffffff" stroke="#c9d5df"/>
+<text x="898.5" y="390.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="11" font-weight="600" fill="#45607a" text-anchor="middle" font-style="italic">la tensión T</text>
+<text x="898.5" y="404.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="11" font-weight="600" fill="#45607a" text-anchor="middle" font-style="italic">viaja por el</text>
+<line x1="1270.0" y1="419.0" x2="1367.0" y2="419.0" stroke="#6b8194" stroke-width="2.2" marker-end="url(#punta)"/>
+<rect x="1271.5" y="375.0" width="94.0" height="36.0" rx="9" fill="#ffffff" stroke="#c9d5df"/>
+<text x="1318.5" y="390.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="11" font-weight="600" fill="#45607a" text-anchor="middle" font-style="italic">T aplicada en el</text>
+<text x="1318.5" y="404.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="11" font-weight="600" fill="#45607a" text-anchor="middle" font-style="italic">carrete produce</text>
+<line x1="1370.0" y1="694.0" x2="1273.0" y2="694.0" stroke="#6b8194" stroke-width="2.2" marker-end="url(#punta)"/>
+<rect x="1274.5" y="636.0" width="94.0" height="50.0" rx="9" fill="#ffffff" stroke="#c9d5df"/>
+<text x="1321.5" y="651.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="11" font-weight="600" fill="#45607a" text-anchor="middle" font-style="italic">el giro se</text>
+<text x="1321.5" y="665.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="11" font-weight="600" fill="#45607a" text-anchor="middle" font-style="italic">vuelve avance</text>
+<text x="1321.5" y="679.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="11" font-weight="600" fill="#45607a" text-anchor="middle" font-style="italic">por</text>
+<line x1="950.0" y1="694.0" x2="853.0" y2="694.0" stroke="#6b8194" stroke-width="2.2" marker-end="url(#punta)"/>
+<rect x="854.5" y="664.0" width="94.0" height="22.0" rx="9" fill="#ffffff" stroke="#c9d5df"/>
+<text x="901.5" y="679.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="11" font-weight="600" fill="#45607a" text-anchor="middle" font-style="italic">que necesita</text>
+<line x1="530.0" y1="694.0" x2="433.0" y2="694.0" stroke="#6b8194" stroke-width="2.2" marker-end="url(#punta)"/>
+<rect x="434.5" y="650.0" width="94.0" height="36.0" rx="9" fill="#ffffff" stroke="#c9d5df"/>
+<text x="481.5" y="665.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="11" font-weight="600" fill="#45607a" text-anchor="middle" font-style="italic">que impulsa al</text>
+<text x="481.5" y="679.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="11" font-weight="600" fill="#45607a" text-anchor="middle" font-style="italic">carro según la</text>
+<line x1="430.0" y1="969.0" x2="527.0" y2="969.0" stroke="#6b8194" stroke-width="2.2" marker-end="url(#punta)"/>
+<rect x="431.5" y="911.0" width="94.0" height="50.0" rx="9" fill="#ffffff" stroke="#c9d5df"/>
+<text x="478.5" y="926.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="11" font-weight="600" fill="#45607a" text-anchor="middle" font-style="italic">al acabar la</text>
+<text x="478.5" y="940.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="11" font-weight="600" fill="#45607a" text-anchor="middle" font-style="italic">caída se</text>
+<text x="478.5" y="954.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="11" font-weight="600" fill="#45607a" text-anchor="middle" font-style="italic">conserva por</text>
+<line x1="850.0" y1="969.0" x2="947.0" y2="969.0" stroke="#6b8194" stroke-width="2.2" marker-end="url(#punta)"/>
+<rect x="851.5" y="925.0" width="94.0" height="36.0" rx="9" fill="#ffffff" stroke="#c9d5df"/>
+<text x="898.5" y="940.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="11" font-weight="600" fill="#45607a" text-anchor="middle" font-style="italic">hasta que la</text>
+<text x="898.5" y="954.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="11" font-weight="600" fill="#45607a" text-anchor="middle" font-style="italic">disipan las</text>
+<line x1="1270.0" y1="969.0" x2="1367.0" y2="969.0" stroke="#6b8194" stroke-width="2.2" marker-end="url(#punta)"/>
+<rect x="1271.5" y="939.0" width="94.0" height="22.0" rx="9" fill="#ffffff" stroke="#c9d5df"/>
+<text x="1318.5" y="954.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="11" font-weight="600" fill="#45607a" text-anchor="middle" font-style="italic">se restan en el</text>
+<line x1="1530.0" y1="503.0" x2="1530.0" y2="607.0" stroke="#6b8194" stroke-width="2.2" marker-end="url(#punta)"/>
+<rect x="1360.0" y="545.5" width="150.0" height="22.0" rx="9" fill="#ffffff" stroke="#c9d5df"/>
+<text x="1435.0" y="560.5" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="11" font-weight="600" fill="#45607a" text-anchor="middle" font-style="italic">acelera el giro según la</text>
+<line x1="270.0" y1="778.0" x2="270.0" y2="882.0" stroke="#6b8194" stroke-width="2.2" marker-end="url(#punta)"/>
+<rect x="290.0" y="820.5" width="150.0" height="22.0" rx="9" fill="#ffffff" stroke="#c9d5df"/>
+<text x="365.0" y="835.5" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="11" font-weight="600" fill="#45607a" text-anchor="middle" font-style="italic">el carro gana</text>
+<line x1="1110.0" y1="335.0" x2="1110.0" y2="289.0" stroke="#6b8194" stroke-width="2.2" marker-end="url(#punta)"/>
+<rect x="1125.0" y="299.5" width="200.0" height="22.0" rx="9" fill="#ffffff" stroke="#c9d5df"/>
+<text x="1225.0" y="314.5" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="11" font-weight="600" fill="#45607a" text-anchor="middle" font-style="italic">T carga el mástil, que cumple el</text>
+<line x1="1530.0" y1="1053.0" x2="1530.0" y2="1107.0" stroke="#6b8194" stroke-width="2.2" marker-end="url(#punta)"/>
+<rect x="1370.0" y="1070.5" width="130.0" height="22.0" rx="9" fill="#ffffff" stroke="#c9d5df"/>
+<text x="1435.0" y="1085.5" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="11" font-weight="600" fill="#45607a" text-anchor="middle" font-style="italic">se verifica con la</text>
+<g>
+<rect x="110" y="335" width="320" height="168" rx="14" fill="#ffffff" stroke="#e8890c" stroke-width="2.4" filter="url(#sombra)"/>
+<rect x="110" y="335" width="320" height="40" rx="14" fill="#e8890c" opacity="0.12"/>
+<circle cx="134" cy="355" r="14" fill="#e8890c"/>
+<text x="134.0" y="360.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">1</text>
+<text x="156.0" y="361.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="15" font-weight="700" fill="#10243b" text-anchor="start">Energía potencial gravitatoria</text>
+<text x="126.0" y="405.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="19" font-weight="700" fill="#10243b" text-anchor="start">U = m·g·h</text>
+<text x="126.0" y="430.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#3f566b" text-anchor="start">El contrapeso de masa m, elevado una altura h,</text>
+<text x="126.0" y="447.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#3f566b" text-anchor="start">guarda la energía. Es la única fuente</text>
+<text x="126.0" y="464.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#3f566b" text-anchor="start">permitida.</text>
+<line x1="124" y1="477" x2="416" y2="477" stroke="#e3e9ef" stroke-width="1"/>
+<text x="126.0" y="494.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="11.5" font-weight="700" fill="#e8890c" text-anchor="start">Serway 7.6 · Tipler 7.1</text>
+</g>
+<g>
+<rect x="530" y="335" width="320" height="168" rx="14" fill="#ffffff" stroke="#2f6fd6" stroke-width="2.4" filter="url(#sombra)"/>
+<rect x="530" y="335" width="320" height="40" rx="14" fill="#2f6fd6" opacity="0.12"/>
+<circle cx="554" cy="355" r="14" fill="#2f6fd6"/>
+<text x="554.0" y="360.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">2</text>
+<text x="576.0" y="361.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="15" font-weight="700" fill="#10243b" text-anchor="start">2.ª ley de Newton: contrapeso</text>
+<text x="546.0" y="405.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="19" font-weight="700" fill="#10243b" text-anchor="start">m·g − T = m·a<tspan dy="5" font-size="70%">p</tspan><tspan dy="-5">​</tspan></text>
+<text x="546.0" y="430.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#3f566b" text-anchor="start">DCL del contrapeso: peso hacia abajo y tensión</text>
+<text x="546.0" y="447.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#3f566b" text-anchor="start">hacia arriba. Como baja acelerando, T es menor</text>
+<text x="546.0" y="464.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#3f566b" text-anchor="start">que m·g.</text>
+<line x1="544" y1="477" x2="836" y2="477" stroke="#e3e9ef" stroke-width="1"/>
+<text x="546.0" y="494.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="11.5" font-weight="700" fill="#2f6fd6" text-anchor="start">Serway 5.4, 5.5, 5.7 · Tipler 4.3–4.5</text>
+</g>
+<g>
+<rect x="950" y="335" width="320" height="168" rx="14" fill="#ffffff" stroke="#2f6fd6" stroke-width="2.4" filter="url(#sombra)"/>
+<rect x="950" y="335" width="320" height="40" rx="14" fill="#2f6fd6" opacity="0.12"/>
+<circle cx="974" cy="355" r="14" fill="#2f6fd6"/>
+<text x="974.0" y="360.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
+<text x="996.0" y="361.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="15" font-weight="700" fill="#10243b" text-anchor="start">Hilo inextensible y poleas</text>
+<text x="966.0" y="405.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="19" font-weight="700" fill="#10243b" text-anchor="start">T igual en todo el hilo</text>
+<text x="966.0" y="430.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#3f566b" text-anchor="start">Poleas ligeras y sin roce solo cambian la</text>
+<text x="966.0" y="447.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#3f566b" text-anchor="start">dirección de T. El hilo se desenrolla sin</text>
+<text x="966.0" y="464.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#3f566b" text-anchor="start">deslizar: v<tspan dy="5" font-size="70%">p</tspan><tspan dy="-5">​</tspan> = ω·r.</text>
+<line x1="964" y1="477" x2="1256" y2="477" stroke="#e3e9ef" stroke-width="1"/>
+<text x="966.0" y="494.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="11.5" font-weight="700" fill="#2f6fd6" text-anchor="start">Serway 5.7, 10.3 · Tipler 4.5, 9.1</text>
+</g>
+<g>
+<rect x="1370" y="335" width="320" height="168" rx="14" fill="#ffffff" stroke="#0f9fbd" stroke-width="2.4" filter="url(#sombra)"/>
+<rect x="1370" y="335" width="320" height="40" rx="14" fill="#0f9fbd" opacity="0.12"/>
+<circle cx="1394" cy="355" r="14" fill="#0f9fbd"/>
+<text x="1394.0" y="360.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">4</text>
+<text x="1416.0" y="361.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="15" font-weight="700" fill="#10243b" text-anchor="start">Torque en el eje motriz</text>
+<text x="1386.0" y="405.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="19" font-weight="700" fill="#10243b" text-anchor="start">τ = T·r</text>
+<text x="1386.0" y="430.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#3f566b" text-anchor="start">La tensión actúa a una distancia r del eje</text>
+<text x="1386.0" y="447.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#3f566b" text-anchor="start">(radio del carrete) y lo hace girar. Más r:</text>
+<text x="1386.0" y="464.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#3f566b" text-anchor="start">más torque, menos avance.</text>
+<line x1="1384" y1="477" x2="1676" y2="477" stroke="#e3e9ef" stroke-width="1"/>
+<text x="1386.0" y="494.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="11.5" font-weight="700" fill="#0f9fbd" text-anchor="start">Serway 10.6 · Tipler 9.4</text>
+</g>
+<g>
+<rect x="1370" y="610" width="320" height="168" rx="14" fill="#ffffff" stroke="#0f9fbd" stroke-width="2.4" filter="url(#sombra)"/>
+<rect x="1370" y="610" width="320" height="40" rx="14" fill="#0f9fbd" opacity="0.12"/>
+<circle cx="1394" cy="630" r="14" fill="#0f9fbd"/>
+<text x="1394.0" y="635.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">5</text>
+<text x="1416.0" y="636.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="15" font-weight="700" fill="#10243b" text-anchor="start">2.ª ley de Newton en rotación</text>
+<text x="1386.0" y="680.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="19" font-weight="700" fill="#10243b" text-anchor="start">Στ = I·α</text>
+<text x="1386.0" y="705.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#3f566b" text-anchor="start">Ruedas, eje y poleas tienen momento de inercia</text>
+<text x="1386.0" y="722.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#3f566b" text-anchor="start">I: parte de la energía se usa en hacerlos</text>
+<text x="1386.0" y="739.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#3f566b" text-anchor="start">girar.</text>
+<line x1="1384" y1="752" x2="1676" y2="752" stroke="#e3e9ef" stroke-width="1"/>
+<text x="1386.0" y="769.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="11.5" font-weight="700" fill="#0f9fbd" text-anchor="start">Serway 10.5, 10.7 · Tipler 9.3–9.5</text>
+</g>
+<g>
+<rect x="950" y="610" width="320" height="168" rx="14" fill="#ffffff" stroke="#0f9fbd" stroke-width="2.4" filter="url(#sombra)"/>
+<rect x="950" y="610" width="320" height="40" rx="14" fill="#0f9fbd" opacity="0.12"/>
+<circle cx="974" cy="630" r="14" fill="#0f9fbd"/>
+<text x="974.0" y="635.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">6</text>
+<text x="996.0" y="636.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="15" font-weight="700" fill="#10243b" text-anchor="start">Rodadura sin deslizamiento</text>
+<text x="966.0" y="680.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="19" font-weight="700" fill="#10243b" text-anchor="start">v = ω·R ; a = α·R</text>
+<text x="966.0" y="705.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#3f566b" text-anchor="start">Une el giro de las ruedas con el avance.</text>
+<text x="966.0" y="722.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#3f566b" text-anchor="start">Mientras cae m, el carro avanza d ~ h·R/r (~75</text>
+<text x="966.0" y="739.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#3f566b" text-anchor="start">cm con h = 15 cm y R/r = 5).</text>
+<line x1="964" y1="752" x2="1256" y2="752" stroke="#e3e9ef" stroke-width="1"/>
+<text x="966.0" y="769.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="11.5" font-weight="700" fill="#0f9fbd" text-anchor="start">Serway 10.9 · Tipler 9.6</text>
+</g>
+<g>
+<rect x="530" y="610" width="320" height="168" rx="14" fill="#ffffff" stroke="#e5484d" stroke-width="2.4" filter="url(#sombra)"/>
+<rect x="530" y="610" width="320" height="40" rx="14" fill="#e5484d" opacity="0.12"/>
+<circle cx="554" cy="630" r="14" fill="#e5484d"/>
+<text x="554.0" y="635.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">7</text>
+<text x="576.0" y="636.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="15" font-weight="700" fill="#10243b" text-anchor="start">Rozamiento estático</text>
+<text x="546.0" y="680.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="19" font-weight="700" fill="#10243b" text-anchor="start">f<tspan dy="5" font-size="70%">s,máx</tspan><tspan dy="-5">​</tspan> = μ<tspan dy="5" font-size="70%">s</tspan><tspan dy="-5">​</tspan>·N</text>
+<text x="546.0" y="705.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#3f566b" text-anchor="start">El suelo empuja las ruedas motrices hacia</text>
+<text x="546.0" y="722.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#3f566b" text-anchor="start">adelante. Si se necesita más que μ<tspan dy="5" font-size="70%">s</tspan><tspan dy="-5">​</tspan>·N, la</text>
+<text x="546.0" y="739.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#3f566b" text-anchor="start">rueda patina; un lastre aumenta N.</text>
+<line x1="544" y1="752" x2="836" y2="752" stroke="#e3e9ef" stroke-width="1"/>
+<text x="546.0" y="769.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="11.5" font-weight="700" fill="#e5484d" text-anchor="start">Serway 5.8 · Tipler 5.1</text>
+</g>
+<g>
+<rect x="110" y="610" width="320" height="168" rx="14" fill="#ffffff" stroke="#2f6fd6" stroke-width="2.4" filter="url(#sombra)"/>
+<rect x="110" y="610" width="320" height="40" rx="14" fill="#2f6fd6" opacity="0.12"/>
+<circle cx="134" cy="630" r="14" fill="#2f6fd6"/>
+<text x="134.0" y="635.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">8</text>
+<text x="156.0" y="636.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="15" font-weight="700" fill="#10243b" text-anchor="start">2.ª ley de Newton: carro</text>
+<text x="126.0" y="680.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="19" font-weight="700" fill="#10243b" text-anchor="start">ΣF<tspan dy="5" font-size="70%">x</tspan><tspan dy="-5">​</tspan> = M<tspan dy="5" font-size="70%">T</tspan><tspan dy="-5">​</tspan>·a</text>
+<text x="126.0" y="705.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#3f566b" text-anchor="start">La fuerza externa que impulsa al sistema es el</text>
+<text x="126.0" y="722.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#3f566b" text-anchor="start">rozamiento estático. M<tspan dy="5" font-size="70%">T</tspan><tspan dy="-5">​</tspan> = masa del carro +</text>
+<text x="126.0" y="739.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#3f566b" text-anchor="start">masa del contrapeso.</text>
+<line x1="124" y1="752" x2="416" y2="752" stroke="#e3e9ef" stroke-width="1"/>
+<text x="126.0" y="769.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="11.5" font-weight="700" fill="#2f6fd6" text-anchor="start">Serway 5.4, 5.7 · Tipler 4.3</text>
+</g>
+<g>
+<rect x="110" y="885" width="320" height="168" rx="14" fill="#ffffff" stroke="#e8890c" stroke-width="2.4" filter="url(#sombra)"/>
+<rect x="110" y="885" width="320" height="40" rx="14" fill="#e8890c" opacity="0.12"/>
+<circle cx="134" cy="905" r="14" fill="#e8890c"/>
+<text x="134.0" y="910.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">9</text>
+<text x="156.0" y="911.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="15" font-weight="700" fill="#10243b" text-anchor="start">Energía cinética</text>
+<text x="126.0" y="955.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="16" font-weight="700" fill="#10243b" text-anchor="start">K = ½M<tspan dy="5" font-size="70%">T</tspan><tspan dy="-5">​</tspan>v² + ½m·v<tspan dy="5" font-size="70%">p</tspan><tspan dy="-5">​</tspan>² + ½ΣIω²</text>
+<text x="126.0" y="980.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#3f566b" text-anchor="start">Al final de la caída, la energía está en el</text>
+<text x="126.0" y="997.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#3f566b" text-anchor="start">avance del carro, la bajada del contrapeso y</text>
+<text x="126.0" y="1014.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#3f566b" text-anchor="start">el giro de ruedas, eje y poleas.</text>
+<line x1="124" y1="1027" x2="416" y2="1027" stroke="#e3e9ef" stroke-width="1"/>
+<text x="126.0" y="1044.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="11.5" font-weight="700" fill="#e8890c" text-anchor="start">Serway 7.5, 10.4 · Tipler 6.1, 9.2</text>
+</g>
+<g>
+<rect x="530" y="885" width="320" height="168" rx="14" fill="#ffffff" stroke="#2f6fd6" stroke-width="2.4" filter="url(#sombra)"/>
+<rect x="530" y="885" width="320" height="40" rx="14" fill="#2f6fd6" opacity="0.12"/>
+<circle cx="554" cy="905" r="14" fill="#2f6fd6"/>
+<text x="554.0" y="910.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">10</text>
+<text x="576.0" y="911.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="15" font-weight="700" fill="#10243b" text-anchor="start">1.ª ley de Newton: inercia</text>
+<text x="546.0" y="955.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="19" font-weight="700" fill="#10243b" text-anchor="start">a = 0 si ΣF = 0</text>
+<text x="546.0" y="980.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#3f566b" text-anchor="start">Cuando m llega abajo y el hilo se suelta, ya</text>
+<text x="546.0" y="997.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#3f566b" text-anchor="start">no hay torque: el carro sigue avanzando por</text>
+<text x="546.0" y="1014.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#3f566b" text-anchor="start">inercia.</text>
+<line x1="544" y1="1027" x2="836" y2="1027" stroke="#e3e9ef" stroke-width="1"/>
+<text x="546.0" y="1044.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="11.5" font-weight="700" fill="#2f6fd6" text-anchor="start">Serway 5.2 · Tipler 4.1</text>
+</g>
+<g>
+<rect x="950" y="885" width="320" height="168" rx="14" fill="#ffffff" stroke="#e5484d" stroke-width="2.4" filter="url(#sombra)"/>
+<rect x="950" y="885" width="320" height="40" rx="14" fill="#e5484d" opacity="0.12"/>
+<circle cx="974" cy="905" r="14" fill="#e5484d"/>
+<text x="974.0" y="910.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">11</text>
+<text x="996.0" y="911.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="15" font-weight="700" fill="#10243b" text-anchor="start">Pérdidas por rozamiento</text>
+<text x="966.0" y="955.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="16" font-weight="700" fill="#10243b" text-anchor="start">W<tspan dy="5" font-size="70%">pérd</tspan><tspan dy="-5">​</tspan> = f<tspan dy="5" font-size="70%">r</tspan><tspan dy="-5">​</tspan>·d ; f<tspan dy="5" font-size="70%">r</tspan><tspan dy="-5">​</tspan> = μ<tspan dy="5" font-size="70%">r</tspan><tspan dy="-5">​</tspan>·N</text>
+<text x="966.0" y="980.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#3f566b" text-anchor="start">Rozamiento por rodadura, en los bujes y en las</text>
+<text x="966.0" y="997.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#3f566b" text-anchor="start">poleas, más el aire. Convierten la energía en</text>
+<text x="966.0" y="1014.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#3f566b" text-anchor="start">calor y detienen al carro.</text>
+<line x1="964" y1="1027" x2="1256" y2="1027" stroke="#e3e9ef" stroke-width="1"/>
+<text x="966.0" y="1044.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="11.5" font-weight="700" fill="#e5484d" text-anchor="start">Serway 5.8, 8.3–8.4 · Tipler 5.1, 7.3</text>
+</g>
+<g>
+<rect x="1370" y="885" width="320" height="168" rx="14" fill="#ffffff" stroke="#e8890c" stroke-width="2.4" filter="url(#sombra)"/>
+<rect x="1370" y="885" width="320" height="40" rx="14" fill="#e8890c" opacity="0.12"/>
+<circle cx="1394" cy="905" r="14" fill="#e8890c"/>
+<text x="1394.0" y="910.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">12</text>
+<text x="1416.0" y="911.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="15" font-weight="700" fill="#10243b" text-anchor="start">Balance de energía</text>
+<text x="1386.0" y="955.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="19" font-weight="700" fill="#10243b" text-anchor="start">m·g·h = K + W<tspan dy="5" font-size="70%">pérd</tspan><tspan dy="-5">​</tspan></text>
+<text x="1386.0" y="980.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#3f566b" text-anchor="start">Predice la velocidad y la distancia. La</text>
+<text x="1386.0" y="997.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#3f566b" text-anchor="start">diferencia entre lo calculado y lo medido</text>
+<text x="1386.0" y="1014.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#3f566b" text-anchor="start">muestra cuánta energía se perdió.</text>
+<line x1="1384" y1="1027" x2="1676" y2="1027" stroke="#e3e9ef" stroke-width="1"/>
+<text x="1386.0" y="1044.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="11.5" font-weight="700" fill="#e8890c" text-anchor="start">Serway 8.1–8.2, 10.8 · Tipler 7.2–7.3</text>
+</g>
+<g>
+<rect x="950" y="118" width="320" height="168" rx="14" fill="#ffffff" stroke="#8a6a45" stroke-width="2.4" filter="url(#sombra)"/>
+<rect x="950" y="118" width="320" height="40" rx="14" fill="#8a6a45" opacity="0.12"/>
+<circle cx="974" cy="138" r="14" fill="#ffffff" stroke="#8a6a45" stroke-width="2.5"/>
+<text x="974.0" y="143.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="13" font-weight="700" fill="#8a6a45" text-anchor="middle">13</text>
+<text x="996.0" y="144.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="15" font-weight="700" fill="#10243b" text-anchor="start">Equilibrio estático del mástil</text>
+<text x="966.0" y="188.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="19" font-weight="700" fill="#10243b" text-anchor="start">ΣF = 0 ; Στ = 0</text>
+<text x="966.0" y="213.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#3f566b" text-anchor="start">Las tensiones del hilo cargan las poleas. El</text>
+<text x="966.0" y="230.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#3f566b" text-anchor="start">mástil va en el punto medio entre ellas y</text>
+<text x="966.0" y="247.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#3f566b" text-anchor="start">lleva escuadras para no inclinarse.</text>
+<line x1="964" y1="260" x2="1256" y2="260" stroke="#e3e9ef" stroke-width="1"/>
+<text x="966.0" y="277.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="11.5" font-weight="700" fill="#8a6a45" text-anchor="start">Serway 12.1–12.3 · Tipler 12.1–12.3</text>
+</g>
+<g>
+<rect x="1370" y="1110" width="320" height="168" rx="14" fill="#ffffff" stroke="#7a5bd1" stroke-width="2.4" filter="url(#sombra)"/>
+<rect x="1370" y="1110" width="320" height="40" rx="14" fill="#7a5bd1" opacity="0.12"/>
+<circle cx="1394" cy="1130" r="14" fill="#ffffff" stroke="#7a5bd1" stroke-width="2.5"/>
+<text x="1394.0" y="1135.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="13" font-weight="700" fill="#7a5bd1" text-anchor="middle">14</text>
+<text x="1416.0" y="1136.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="15" font-weight="700" fill="#10243b" text-anchor="start">Medición y análisis dimensional</text>
+<text x="1386.0" y="1180.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="19" font-weight="700" fill="#10243b" text-anchor="start">v = d / t ; [τ] = N·m</text>
+<text x="1386.0" y="1205.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#3f566b" text-anchor="start">Medir d, t, h, R, r, m y M con su</text>
+<text x="1386.0" y="1222.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#3f566b" text-anchor="start">incertidumbre (video, Tracker o Phyphox) y</text>
+<text x="1386.0" y="1239.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#3f566b" text-anchor="start">revisar las unidades de cada ecuación.</text>
+<line x1="1384" y1="1252" x2="1676" y2="1252" stroke="#e3e9ef" stroke-width="1"/>
+<text x="1386.0" y="1269.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="11.5" font-weight="700" fill="#7a5bd1" text-anchor="start">Serway 1.3, 2.1 · Tipler 1.2–1.4, 2.1</text>
+</g>
+<rect x="110" y="1110" width="1120" height="168" rx="14" fill="#ffffff" stroke="#c9d5df" stroke-width="1.5"/>
+<text x="130.0" y="1138.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="14" font-weight="700" fill="#10243b" text-anchor="start">VARIABLES Y UNIDADES (SI)</text>
+<text x="130.0" y="1164.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12" font-weight="400" fill="#33495e" text-anchor="start">m: masa del contrapeso (kg)</text>
+<text x="130.0" y="1182.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12" font-weight="400" fill="#33495e" text-anchor="start">M<tspan dy="5" font-size="70%">T</tspan><tspan dy="-5">​</tspan>: masa del carro + contrapeso (kg)</text>
+<text x="130.0" y="1200.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12" font-weight="400" fill="#33495e" text-anchor="start">h: altura de caída (m)</text>
+<text x="130.0" y="1218.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12" font-weight="400" fill="#33495e" text-anchor="start">T: tensión del hilo (N)</text>
+<text x="130.0" y="1236.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12" font-weight="400" fill="#33495e" text-anchor="start">r: radio del carrete (m)</text>
+<text x="130.0" y="1254.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12" font-weight="400" fill="#33495e" text-anchor="start">R: radio de la rueda (m)</text>
+<text x="505.0" y="1164.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12" font-weight="400" fill="#33495e" text-anchor="start">τ: torque (N·m)</text>
+<text x="505.0" y="1182.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12" font-weight="400" fill="#33495e" text-anchor="start">I: momento de inercia (kg·m²)</text>
+<text x="505.0" y="1200.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12" font-weight="400" fill="#33495e" text-anchor="start">ω, α: velocidad (rad/s) y aceleración angular (rad/s²)</text>
+<text x="505.0" y="1218.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12" font-weight="400" fill="#33495e" text-anchor="start">v, a: velocidad (m/s) y aceleración del carro (m/s²)</text>
+<text x="505.0" y="1236.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12" font-weight="400" fill="#33495e" text-anchor="start">v<tspan dy="5" font-size="70%">p</tspan><tspan dy="-5">​</tspan>, a<tspan dy="5" font-size="70%">p</tspan><tspan dy="-5">​</tspan>: del contrapeso respecto al carro</text>
+<text x="505.0" y="1254.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12" font-weight="400" fill="#33495e" text-anchor="start">g = 9,81 m/s²</text>
+<text x="880.0" y="1164.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12" font-weight="400" fill="#33495e" text-anchor="start">μ<tspan dy="5" font-size="70%">s</tspan><tspan dy="-5">​</tspan>, μ<tspan dy="5" font-size="70%">r</tspan><tspan dy="-5">​</tspan>: rozamiento estático y por rodadura</text>
+<text x="880.0" y="1182.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12" font-weight="400" fill="#33495e" text-anchor="start">N: fuerza normal (N)</text>
+<text x="880.0" y="1200.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12" font-weight="400" fill="#33495e" text-anchor="start">U, K, W<tspan dy="5" font-size="70%">pérd</tspan><tspan dy="-5">​</tspan>: energías y trabajo (J)</text>
+<text x="880.0" y="1218.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12" font-weight="400" fill="#33495e" text-anchor="start">d: distancia (m) · t: tiempo (s)</text>
+<text x="880.0" y="1236.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12" font-weight="400" fill="#33495e" text-anchor="start">Diagrama de cuerpo libre: DCL</text>
+<text x="900.0" y="1318.0" font-family="'Segoe UI', 'Noto Sans', Arial, sans-serif" font-size="12" font-weight="400" fill="#5a7085" text-anchor="middle">Secciones según Serway y Jewett, Física para ciencias e ingeniería, 7.ª ed., Vol. 1 (Cengage, 2008), y Tipler y Mosca, Física para la ciencia y la tecnología, 6.ª ed., Vol. 1 (Reverté, 2010). Si usan otra edición, verifiquen la numeración.</text>
+</svg>
