@@ -1,0 +1,85 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta charset="utf-8">
+<title>Capítulo 1 - Análisis Combinatorio - Problemas</title>
+<style>
+body { font-family: "Times New Roman", serif; font-size: 11pt; }
+h1 { text-align: center; font-size: 14pt; }
+h2 { font-size: 12pt; }
+p { margin: 4pt 0; }
+.sub { margin-left: 24pt; }
+.poem { margin-left: 36pt; }
+</style>
+</head>
+<body>
+<p><b>16 &nbsp; Capítulo 1 &nbsp; Análisis Combinatorio</b></p>
+<h1>PROBLEMAS</h1>
+
+<p><b>1.</b> <b>(a)</b> ¿Cuántas placas de matrícula distintas de 7 posiciones son posibles si las 2 primeras posiciones son para letras y las otras 5 para números?</p>
+<p class="sub"><b>(b)</b> Repita el inciso (a) bajo el supuesto de que ninguna letra ni número puede repetirse en una misma placa.</p>
+
+<p><b>2.</b> ¿Cuántas secuencias de resultados son posibles al lanzar un dado cuatro veces, donde decimos, por ejemplo, que el resultado es 3, 4, 3, 1 si el primer lanzamiento cayó en 3, el segundo en 4, el tercero en 3 y el cuarto en 1?</p>
+
+<p><b>3.</b> Veinte trabajadores serán asignados a 20 trabajos distintos, uno para cada trabajo. ¿Cuántas asignaciones diferentes son posibles?</p>
+
+<p><b>4.</b> John, Jim, Jay y Jack han formado una banda compuesta por 4 instrumentos. Si cada uno de los muchachos puede tocar los 4 instrumentos, ¿cuántos arreglos diferentes son posibles? ¿Y si John y Jim pueden tocar los 4 instrumentos, pero Jay y Jack solo pueden tocar el piano y la batería?</p>
+
+<p><b>5.</b> Durante años, los códigos de área telefónicos en Estados Unidos y Canadá consistían en una secuencia de tres dígitos. El primer dígito era un entero entre 2 y 9, el segundo dígito era 0 o 1, y el tercer dígito era cualquier entero del 1 al 9. ¿Cuántos códigos de área eran posibles? ¿Cuántos códigos de área que comenzaban con 4 eran posibles?</p>
+
+<p><b>6.</b> Una conocida rima infantil comienza así:</p>
+<p class="poem">“Mientras iba camino a St. Ives<br>
+conocí a un hombre con 7 esposas.<br>
+Cada esposa tenía 7 sacos.<br>
+Cada saco tenía 7 gatos.<br>
+Cada gato tenía 7 gatitos…”</p>
+<p>¿Cuántos gatitos encontró el viajero?</p>
+
+<p><b>7.</b> <b>(a)</b> ¿De cuántas maneras pueden sentarse 3 niños y 3 niñas en una fila?</p>
+<p class="sub"><b>(b)</b> ¿De cuántas maneras pueden sentarse 3 niños y 3 niñas en una fila si los niños y las niñas deben sentarse juntos cada grupo por separado?</p>
+<p class="sub"><b>(c)</b> ¿De cuántas maneras si solo los niños deben sentarse juntos?</p>
+<p class="sub"><b>(d)</b> ¿De cuántas maneras si no se permite que dos personas del mismo sexo se sienten juntas?</p>
+
+<p><b>8.</b> ¿Cuántos arreglos diferentes de letras se pueden formar con las letras de</p>
+<p class="sub"><b>(a)</b> Fluke?</p>
+<p class="sub"><b>(b)</b> Propose?</p>
+<p class="sub"><b>(c)</b> Mississippi?</p>
+<p class="sub"><b>(d)</b> Arrange?</p>
+
+<p><b>9.</b> Un niño tiene 12 bloques, de los cuales 6 son negros, 4 son rojos, 1 es blanco y 1 es azul. Si el niño coloca los bloques en una línea, ¿cuántos arreglos son posibles?</p>
+
+<p><b>10.</b> ¿De cuántas maneras pueden sentarse 8 personas en una fila si</p>
+<p class="sub"><b>(a)</b> no hay restricciones en la disposición de los asientos?</p>
+<p class="sub"><b>(b)</b> las personas A y B deben sentarse una al lado de la otra?</p>
+<p class="sub"><b>(c)</b> hay 4 hombres y 4 mujeres y no pueden sentarse juntos 2 hombres ni 2 mujeres?</p>
+<p class="sub"><b>(d)</b> hay 5 hombres y deben sentarse juntos?</p>
+<p class="sub"><b>(e)</b> hay 4 parejas casadas y cada pareja debe sentarse junta?</p>
+
+<p><b>11.</b> ¿De cuántas maneras se pueden acomodar 3 novelas, 2 libros de matemáticas y 1 libro de química en un estante si</p>
+<p class="sub"><b>(a)</b> los libros pueden acomodarse en cualquier orden?</p>
+<p class="sub"><b>(b)</b> los libros de matemáticas deben estar juntos y las novelas deben estar juntas?</p>
+<p class="sub"><b>(c)</b> las novelas deben estar juntas, pero los demás libros pueden acomodarse en cualquier orden?</p>
+
+<p><b>12.</b> Se otorgarán cinco premios distintos (mejor aprovechamiento académico, mejores cualidades de liderazgo, etc.) a estudiantes seleccionados de una clase de 30. ¿Cuántos resultados diferentes son posibles si</p>
+<p class="sub"><b>(a)</b> un estudiante puede recibir cualquier cantidad de premios?</p>
+<p class="sub"><b>(b)</b> cada estudiante puede recibir como máximo 1 premio?</p>
+
+<p><b>13.</b> Considere un grupo de 20 personas. Si todos se dan la mano con todos los demás, ¿cuántos apretones de manos se producen?</p>
+
+<p><b>14.</b> ¿Cuántas manos de póquer de 5 cartas existen?</p>
+
+<p><b>15.</b> Una clase de baile consta de 22 estudiantes, de los cuales 10 son mujeres y 12 son hombres. Si se van a elegir 5 hombres y 5 mujeres y luego formar parejas, ¿cuántos resultados son posibles?</p>
+
+<p><b>16.</b> Un estudiante tiene que vender 2 libros de una colección de 6 libros de matemáticas, 7 de ciencias y 4 de economía. ¿Cuántas elecciones son posibles si</p>
+<p class="sub"><b>(a)</b> ambos libros deben ser de la misma materia?</p>
+<p class="sub"><b>(b)</b> los libros deben ser de materias diferentes?</p>
+
+<p><b>17.</b> Se van a repartir siete regalos diferentes entre 10 niños. ¿Cuántos resultados distintos son posibles si ningún niño debe recibir más de un regalo?</p>
+
+<p><b>18.</b> Se va a elegir un comité de 7 personas, formado por 2 republicanos, 2 demócratas y 3 independientes, de un grupo de 5 republicanos, 6 demócratas y 4 independientes. ¿Cuántos comités son posibles?</p>
+
+<p><b>19.</b> De un grupo de 8 mujeres y 6 hombres se va a formar un comité compuesto por 3 hombres y 3 mujeres. ¿Cuántos comités diferentes son posibles si</p>
+<p class="sub"><b>(a)</b> 2 de los hombres se niegan a servir juntos?</p>
+<p class="sub"><b>(b)</b> 2 de las mujeres se niegan a servir juntas?</p>
+<p class="sub"><b>(c)</b> 1 hombre y 1 mujer se niegan a servir juntos?</p>
+</body>
+</html>
