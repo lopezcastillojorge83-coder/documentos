@@ -19,6 +19,12 @@ La opción 1 es la recomendada: es la más resistente y la que usa menos barras.
 
 Cada lámina trae la vista frontal con la fuerza de cada barra, una vista 3D con las barras de soporte (transversales, diagonales superiores y de portal), la tabla de fuerzas, la lista de corte y notas.
 
+### Cómo pegar las uniones
+
+![Cómo pegar las uniones](05_como_pegar_las_uniones.png)
+
+Compara la unión a tope, la traslapada y la unión a tope con cartelas. Muestra por qué los ejes deben cruzarse en el nodo, las medidas de la cartela, el paso a paso de cada nodo y dónde van las cartelas en las opciones 1 y 2. Las medidas son para barras de 5 × 5 mm.
+
 ## Cómo se cuentan las barras
 
 - La cuerda inferior de cada cara es una sola barra de 40 cm. Para el cálculo se divide en tramos entre nodos, pero se corta y se cuenta como una pieza. Las demás barras se pegan sobre ella en los nodos marcados.
@@ -38,6 +44,7 @@ Cada lámina trae la vista frontal con la fuerza de cada barra, una vista 3D con
 ```bash
 python3 generar_laminas.py        # b = 10 cm
 python3 generar_laminas.py 12     # b = 12 cm
+python3 generar_lamina_uniones.py # lámina 05, cómo pegar las uniones
 ```
 
 El script solo usa Python estándar. Calcula las fuerzas por el método de nodos y escribe los archivos `.svg`. Los `.png` se exportaron desde los `.svg` con un navegador.
